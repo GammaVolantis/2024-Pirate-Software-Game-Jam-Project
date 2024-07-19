@@ -59,7 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Baker\baker_test.cs" />
-    <Compile Include="Assets\Code\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Code\MouseControl.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
