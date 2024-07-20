@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\stato\\Documents\\Unity Projects\\2024 Pirate Software Game Jam Project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\stato\\Documents\\Unity Projects\\2024 Pirate Software Game Jam Project\\Assets\\Code\\EnemyScript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Code\\EnemyScript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\stato\\Documents\\Unity Projects\\2024 Pirate Software Game Jam Project\\Assets\\Code\\MouseControl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Code\\MouseControl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\stato\\Documents\\Unity Projects\\2024 Pirate Software Game Jam Project\\Assets\\Code\\CardScript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Code\\CardScript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\stato\\Documents\\Unity Projects\\2024 Pirate Software Game Jam Project\\Assets\\Code\\EnemyScript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Code\\EnemyScript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\stato\\Documents\\Unity Projects\\2024 Pirate Software Game Jam Project\\Assets\\Code\\NewBehaviourScript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Code\\NewBehaviourScript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +22,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "EnemyScript.cs",
               "DocumentMoniker": "C:\\Users\\stato\\Documents\\Unity Projects\\2024 Pirate Software Game Jam Project\\Assets\\Code\\EnemyScript.cs",
               "RelativeDocumentMoniker": "Assets\\Code\\EnemyScript.cs",
@@ -43,7 +39,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CardScript.cs",
               "DocumentMoniker": "C:\\Users\\stato\\Documents\\Unity Projects\\2024 Pirate Software Game Jam Project\\Assets\\Code\\CardScript.cs",
               "RelativeDocumentMoniker": "Assets\\Code\\CardScript.cs",
@@ -51,12 +47,11 @@
               "RelativeToolTip": "Assets\\Code\\CardScript.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T03:16:11.957Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-20T03:16:11.957Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MouseControl.cs",
               "DocumentMoniker": "C:\\Users\\stato\\Documents\\Unity Projects\\2024 Pirate Software Game Jam Project\\Assets\\Code\\MouseControl.cs",
               "RelativeDocumentMoniker": "Assets\\Code\\MouseControl.cs",
@@ -66,17 +61,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-20T01:22:45.174Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "NewBehaviourScript.cs",
-              "DocumentMoniker": "C:\\Users\\stato\\Documents\\Unity Projects\\2024 Pirate Software Game Jam Project\\Assets\\Code\\NewBehaviourScript.cs",
-              "RelativeDocumentMoniker": "Assets\\Code\\NewBehaviourScript.cs",
-              "ToolTip": "C:\\Users\\stato\\Documents\\Unity Projects\\2024 Pirate Software Game Jam Project\\Assets\\Code\\NewBehaviourScript.cs",
-              "RelativeToolTip": "Assets\\Code\\NewBehaviourScript.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-19T04:32:05.785Z"
             }
           ]
         }
