@@ -4,6 +4,9 @@ using UnityEngine.Tilemaps;
 
 public class RoomGenerator : MonoBehaviour
 {
+    //Creates a singleton instance that will allow access to the baseGrid variable across scripts - will update when the script reruns
+    public static RoomGenerator Instance { get; private set; }
+
     public Tilemap FloorTilemap; // Public to select a tilemap to work with
 
     [System.Serializable]
@@ -39,7 +42,7 @@ public class RoomGenerator : MonoBehaviour
         public List<WeightedTile> innerBendUpperLeftTiles;
         public List<WeightedTile> innerBendUpperRightTiles;
         public WeightedTile darknessTile; 
-        public List<WeightedTile> floorTiles; 
+        public List<WeightedTile> floorTiles;
     }
 
     // Class to hold settings for each environment
@@ -61,6 +64,20 @@ public class RoomGenerator : MonoBehaviour
 
     // The final grid that holds the values for which grid associates to which tile mapping. "0" is darkness tiles, "1" is wall tiles (all walls - types are handled elsewhere), and "2" is floor tiles (same note as wall tiles)
     public int[,] baseGrid;
+
+    // Ensures only one instance is ever called at a time
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     void Start()
     {
