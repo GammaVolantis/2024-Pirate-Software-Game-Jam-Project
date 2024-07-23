@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 265533146}
   - component: {fileID: 265533147}
   m_Layer: 0
-  m_Name: Card_Temp
+  m_Name: Card
   m_TagString: Card
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

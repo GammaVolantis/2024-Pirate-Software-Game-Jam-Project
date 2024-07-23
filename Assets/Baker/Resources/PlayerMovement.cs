@@ -11,6 +11,7 @@ public class CharacterMovement : MonoBehaviour
 
     void Update()
     {
+        //Debug.Log("PlayerPos= " + transform.position); //Code for checking the Vect3 of the player
         if (Input.GetMouseButtonDown(0)) // Left mouse button
         {
             Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);

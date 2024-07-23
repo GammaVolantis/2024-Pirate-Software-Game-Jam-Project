@@ -10,7 +10,7 @@ public class MouseController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(mainCamera.ScreenToWorldPoint(Input.mousePosition));
+        Debug.Log(Input.mousePosition);
         Vector3 mouseWorldPos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
         mouseWorldPos.z = 0;
         transform.position = mouseWorldPos;
