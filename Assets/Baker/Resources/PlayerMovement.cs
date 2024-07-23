@@ -83,7 +83,8 @@ public class CharacterMovement : MonoBehaviour
             Vector3 offset = new Vector3(tilemap.cellSize.x / 2, tilemap.cellSize.y / 2, 0);
             worldPosition += offset;
             selectedCharacter.transform.position = worldPosition;
-            Debug.Log("Moved character to: " + worldPosition);
+            //Debug.Log("Moved character to: " + worldPosition);
+            Debug.Log("Moved character to: " + Camera.main.WorldToViewportPoint(transform.position));
 
             // Deselect character after moving
             selectedCharacter = null;

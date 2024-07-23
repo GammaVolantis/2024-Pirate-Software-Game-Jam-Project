@@ -3,32 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\assets\\baker\\resources\\draggable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|c:\\users\\stato\\unity\\2024-pirate-software-game-jam-project\\assets\\baker\\resources\\draggable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|solutionrelative:assets\\baker\\resources\\draggable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\assets\\baker\\resources\\roomgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|solutionrelative:assets\\baker\\resources\\roomgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\assets\\baker\\resources\\healthmeter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|solutionrelative:assets\\baker\\resources\\healthmeter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|c:\\users\\stato\\unity\\2024-pirate-software-game-jam-project\\assets\\baker\\resources\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|solutionrelative:assets\\baker\\resources\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|c:\\users\\stato\\unity\\2024-pirate-software-game-jam-project\\assets\\code\\mousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\assets\\code\\mousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\mousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|c:\\users\\stato\\unity\\2024-pirate-software-game-jam-project\\assets\\code\\cardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\cardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\assets\\baker\\resources\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|solutionrelative:assets\\baker\\resources\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\assets\\baker\\resources\\playerspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|solutionrelative:assets\\baker\\resources\\playerspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\assets\\baker\\resources\\healthmeter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|solutionrelative:assets\\baker\\resources\\healthmeter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\assets\\baker\\resources\\roomgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|solutionrelative:assets\\baker\\resources\\roomgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,11 +34,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "MouseController.cs",
               "DocumentMoniker": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Code\\MouseController.cs",
               "RelativeDocumentMoniker": "Assets\\Code\\MouseController.cs",
@@ -50,50 +46,35 @@
               "RelativeToolTip": "Assets\\Code\\MouseController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T04:33:50.852Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-23T04:33:50.852Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CardController.cs",
-              "DocumentMoniker": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Code\\CardController.cs",
-              "RelativeDocumentMoniker": "Assets\\Code\\CardController.cs",
-              "ToolTip": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Code\\CardController.cs",
-              "RelativeToolTip": "Assets\\Code\\CardController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T04:33:11.722Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "PlayerMovement.cs",
               "DocumentMoniker": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Baker\\Resources\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Baker\\Resources\\PlayerMovement.cs",
               "ToolTip": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Baker\\Resources\\PlayerMovement.cs",
               "RelativeToolTip": "Assets\\Baker\\Resources\\PlayerMovement.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABkAAAA",
+              "ViewState": "AQIAADMAAAAAAAAAAAAowFkAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T15:57:15.051Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-22T15:57:15.051Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "PlayerSpawn.cs",
               "DocumentMoniker": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Baker\\Resources\\PlayerSpawn.cs",
               "RelativeDocumentMoniker": "Assets\\Baker\\Resources\\PlayerSpawn.cs",
               "ToolTip": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Baker\\Resources\\PlayerSpawn.cs",
               "RelativeToolTip": "Assets\\Baker\\Resources\\PlayerSpawn.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAowDAAAAAVAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAowDAAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-22T15:56:00.836Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "HealthMeter.cs",
               "DocumentMoniker": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Baker\\Resources\\HealthMeter.cs",
               "RelativeDocumentMoniker": "Assets\\Baker\\Resources\\HealthMeter.cs",
@@ -101,7 +82,8 @@
               "RelativeToolTip": "Assets\\Baker\\Resources\\HealthMeter.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T04:16:19.854Z"
+              "WhenOpened": "2024-07-22T04:16:19.854Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -111,14 +93,14 @@
               "RelativeDocumentMoniker": "Assets\\Baker\\Resources\\Draggable.cs",
               "ToolTip": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Baker\\Resources\\Draggable.cs",
               "RelativeToolTip": "Assets\\Baker\\Resources\\Draggable.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAQwCEAAAAFAAAA",
+              "ViewState": "AQIAAAEAAAAAAAAAAAASwBQAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-22T03:14:57.127Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "RoomGenerator.cs",
               "DocumentMoniker": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Baker\\Resources\\RoomGenerator.cs",
               "RelativeDocumentMoniker": "Assets\\Baker\\Resources\\RoomGenerator.cs",
@@ -126,8 +108,7 @@
               "RelativeToolTip": "Assets\\Baker\\Resources\\RoomGenerator.cs",
               "ViewState": "AQIAACMAAAAAAAAAAAAIwEMAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T02:25:23.257Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-21T02:25:23.257Z"
             }
           ]
         }

@@ -3,19 +3,18 @@ using UnityEngine.EventSystems;
 
 public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
-    [SerializeField] private Camera mainCamera;
-
     private Canvas canvas;
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
-    private Vector3 startingVect;
+    private Vector3 startingPos;
+    private Vector3 startingSize;
 
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
         canvas = GetComponentInParent<Canvas>();
-        startingVect = rectTransform.anchoredPosition;
+        startingPos = rectTransform.anchoredPosition;
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -27,7 +26,7 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     public void OnDrag(PointerEventData eventData)
     {
         rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
-        //Debug.Log("CardPos= " + mainCamera.WorldToViewportPoint(rectTransform.anchoredPosition) + "StartingVector = " + startingVect);
+        Debug.Log("CardPos= " + Camera.main.WorldToScreenPoint(transform.position) + "startingPosition = " + startingPos);
     }
 
     public void OnEndDrag(PointerEventData eventData)
@@ -35,6 +34,6 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
         Debug.Log("Card Dropped");
         canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
-        rectTransform.anchoredPosition = startingVect;
+        rectTransform.anchoredPosition = startingPos;
     }
 }

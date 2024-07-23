@@ -66,6 +66,7 @@
     <Compile Include="Assets\Baker\Resources\HealthMeter.cs" />
     <Compile Include="Assets\Baker\Resources\CardScript.cs" />
     <Compile Include="Assets\Baker\Resources\RoomGenerator.cs" />
+    <Compile Include="Assets\LocationChecker.cs" />
     <Compile Include="Assets\Baker\Resources\EnemyScript.cs" />
     <Compile Include="Assets\Baker\Resources\MouseControl.cs" />
     <Compile Include="Assets\Code\CardController.cs" />
