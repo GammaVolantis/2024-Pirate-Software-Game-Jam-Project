@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 588303753345116832}
   - component: {fileID: 4360605911196042786}
-  - component: {fileID: 6783704121670418619}
   m_Layer: 0
   m_Name: Mouse
   m_TagString: Untagged
@@ -72,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -201142787
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0, g: 0.9245283, b: 0.91508377, a: 1}
@@ -85,17 +84,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6783704121670418619
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1838985730195465431}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d69ab6501c1d5ae44afbe2140e0851de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseCam: {fileID: 0}
-  distance: 9.7

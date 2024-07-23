@@ -98,8 +98,8 @@
     <Compile Include="Library\PackageCache\com.unity.2d.animation@9.0.3\Editor\SpriteOutlineRenderer\SpriteOutlineRenderer.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@9.0.3\Editor\SkinningModule\SkinningSerializer\SkinningSerializerJSON.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@9.0.3\Editor\SkinningModule\UI\PoseToolbar.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@9.0.3\Editor\SpriteLib\SpriteLibrarySourceAsset\SpriteLibrarySourceAssetImporterInspector.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@9.0.3\Editor\UpgradeTools\BaseUpgrader.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@9.0.3\Editor\SpriteLib\SpriteLibrarySourceAsset\SpriteLibrarySourceAssetImporterInspector.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@9.0.3\Editor\SkinningModule\SkinningCache\CharacterPartCache.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@9.0.3\Editor\SkinningModule\IMGUI\RectSlider.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@9.0.3\Editor\ICharacterDataProvider.cs" />
