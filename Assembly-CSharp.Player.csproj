@@ -64,6 +64,7 @@
     <Compile Include="Assets\Baker\Resources\Draggable.cs" />
     <Compile Include="Assets\Baker\Resources\PlayerSpawn.cs" />
     <Compile Include="Assets\Baker\Resources\HealthMeter.cs" />
+    <Compile Include="Assets\Baker\Resources\CharacterAttributes.cs" />
     <Compile Include="Assets\Baker\Resources\CardScript.cs" />
     <Compile Include="Assets\Baker\Resources\RoomGenerator.cs" />
     <Compile Include="Assets\LocationChecker.cs" />

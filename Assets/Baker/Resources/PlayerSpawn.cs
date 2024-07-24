@@ -72,7 +72,8 @@ public class PlayerSpawn : MonoBehaviour
             worldPosition += offset;
 
             // Instantiate the character at the world position
-            Instantiate(characterPrefab, worldPosition, Quaternion.identity);
+            //Instantiate(characterPrefab, worldPosition, Quaternion.identity);
+            transform.position = worldPosition;
         }
     }
 
