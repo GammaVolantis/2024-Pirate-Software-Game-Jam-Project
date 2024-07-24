@@ -879,7 +879,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UiScaleMode: 1
-  m_ReferencePixelsPerUnit: 100
+  m_ReferencePixelsPerUnit: 1
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 600, y: 400}
   m_ScreenMatchMode: 0
@@ -920,7 +920,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 753103906}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 90}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.0296252, y: 0.0296252, z: 0.0296252}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2124,6 +2124,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 321309233788850115, guid: 67acb1c133327f342945977529877981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 611635842765559509, guid: 67acb1c133327f342945977529877981, type: 3}
+      propertyPath: m_Maskable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 611635842765559509, guid: 67acb1c133327f342945977529877981, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 611635842765559509, guid: 67acb1c133327f342945977529877981, type: 3}
+      propertyPath: m_PreserveAspect
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1752300771277883308, guid: 67acb1c133327f342945977529877981, type: 3}
