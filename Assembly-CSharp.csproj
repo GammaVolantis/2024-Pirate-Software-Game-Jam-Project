@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="Assets\Code\MouseController.cs" />
     <Compile Include="Assets\Baker\baker_test.cs" />
+    <Compile Include="Assets\Baker\Resources\EnemySpawn.cs" />
     <Compile Include="Assets\Baker\Resources\PlayerMovement.cs" />
     <Compile Include="Assets\Baker\Resources\Draggable.cs" />
     <Compile Include="Assets\Baker\Resources\PlayerSpawn.cs" />
