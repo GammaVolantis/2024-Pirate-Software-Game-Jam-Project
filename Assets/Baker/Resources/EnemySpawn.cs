@@ -6,7 +6,7 @@ using System.Collections.Generic;
 public class EnemySpawn : MonoBehaviour
 {
     public Tilemap tilemap;
-    public GameObject characterPrefab;
+    public List<GameObject> characterPrefabs;
     public float waitTime = 1f;
 
     void Start()
@@ -61,19 +61,34 @@ public class EnemySpawn : MonoBehaviour
             BoundsInt bounds = tilemap.cellBounds;
             Vector3Int baseGridOffset = new Vector3Int(bounds.xMin, bounds.yMin, 0);
 
-            // Get a weighted random position from the list of floor positions and apply offset
-            Vector3Int randomFloorPosition = GetWeightedRandomPosition(floorPositions, weights) + baseGridOffset;
 
-            // Convert the tile position to world position using the Tilemap's method
-            Vector3 worldPosition = tilemap.CellToWorld(randomFloorPosition);
+            foreach (GameObject characterPrefab in characterPrefabs) {
+                // Get a weighted random position from the list of floor positions and apply offset
+                Vector3Int randomFloorPosition = GetWeightedRandomPosition(floorPositions, weights) + baseGridOffset;
 
-            // Center the character on the tile by offsetting by half of the tile size
-            Vector3 offset = new Vector3(tilemap.cellSize.x / 2, tilemap.cellSize.y / 2, 0);
-            worldPosition += offset;
+                // Convert the tile position to world position using the Tilemap's method
+                Vector3 worldPosition = tilemap.CellToWorld(randomFloorPosition);
 
-            // Instantiate the character at the world position
-            Instantiate(characterPrefab, worldPosition, Quaternion.identity);
-            // transform.position = worldPosition;
+                // Center the character on the tile by offsetting by half of the tile size
+                Vector3 offset = new Vector3(tilemap.cellSize.x / 2, tilemap.cellSize.y / 2, 0);
+                worldPosition += offset;
+
+                // Instantiate the character at the world position
+                Instantiate(characterPrefab, worldPosition, Quaternion.identity);
+            }
+            //// Get a weighted random position from the list of floor positions and apply offset
+            //Vector3Int randomFloorPosition = GetWeightedRandomPosition(floorPositions, weights) + baseGridOffset;
+
+            //// Convert the tile position to world position using the Tilemap's method
+            //Vector3 worldPosition = tilemap.CellToWorld(randomFloorPosition);
+
+            //// Center the character on the tile by offsetting by half of the tile size
+            //Vector3 offset = new Vector3(tilemap.cellSize.x / 2, tilemap.cellSize.y / 2, 0);
+            //worldPosition += offset;
+
+            //// Instantiate the character at the world position
+            //Instantiate(characterPrefab, worldPosition, Quaternion.identity);
+            //// transform.position = worldPosition;
         }
     }
 
