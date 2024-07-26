@@ -1,51 +1,17 @@
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
-public class PlayerMovement : MonoBehaviour
+public class CharacterMovement : MonoBehaviour
 {
-    public static PlayerMovement Instance { get; private set; }
-
     private GameObject selectedCharacter;
     public Tilemap tilemap;
     public Tilemap overlayTilemap; // Secondary Tilemap for overlays
     public RuleTile overlayTile; // RuleTile to use for overlay
     public int maxMovementDistance = 2; // Maximum movement distance setting
-    private Vector3Int currentCellPosition; // Store the player's current cell position
-
-    private Director director;
-
-    void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject); // Optionally make this persistent across scenes
-        }
-        else
-        {
-            Destroy(gameObject); // Destroy the duplicate instance
-        }
-    }
-
-    void Start()
-    {
-        // Initialize currentCellPosition
-        currentCellPosition = tilemap.WorldToCell(transform.position);
-        Debug.Log("Initial Player current cell position: " + currentCellPosition);
-
-        director = FindObjectOfType<Director>();
-        if (director != null)
-        {
-            director.UpdatePlayerGridPosition(currentCellPosition);
-        }
-    }
 
     void Update()
     {
-        // Always update player cell position for debugging
-        currentCellPosition = tilemap.WorldToCell(transform.position);
-        // Debug.Log("Updated Player current cell position: " + currentCellPosition);
-
+        //Debug.Log("PlayerPos= " + transform.position); //Code for checking the Vect3 of the player
         if (Input.GetMouseButtonDown(0)) // Left mouse button
         {
             Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -102,7 +68,11 @@ public class PlayerMovement : MonoBehaviour
         int dy = Mathf.Abs(characterPosition.y - cellPosition.y);
 
         // Check movement restrictions
-        return dx <= maxMovementDistance && dy <= maxMovementDistance && (dx + dy <= maxMovementDistance);
+        if (dx <= maxMovementDistance && dy <= maxMovementDistance && (dx + dy <= maxMovementDistance))
+        {
+            return true;
+        }
+        return false;
     }
 
     void MoveCharacterTo(Vector3Int cellPosition)
@@ -113,17 +83,8 @@ public class PlayerMovement : MonoBehaviour
             Vector3 offset = new Vector3(tilemap.cellSize.x / 2, tilemap.cellSize.y / 2, 0);
             worldPosition += offset;
             selectedCharacter.transform.position = worldPosition;
-            Debug.Log("Moved character to: " + worldPosition + " (Cell Position: " + cellPosition + ")");
-
-            // Update current cell position
-            currentCellPosition = cellPosition;
-            Debug.Log("Updated Player current cell position after move: " + currentCellPosition);
-
-            // Notify the Director of the player's new position
-            if (director != null)
-            {
-                director.UpdatePlayerGridPosition(currentCellPosition);
-            }
+            //Debug.Log("Moved character to: " + worldPosition);
+            Debug.Log("Moved character to: " + Camera.main.WorldToViewportPoint(transform.position));
 
             // Deselect character after moving
             selectedCharacter = null;
@@ -152,12 +113,5 @@ public class PlayerMovement : MonoBehaviour
     void ClearMovementRange()
     {
         overlayTilemap.ClearAllTiles();
-    }
-
-    // Expose current cell position
-    public Vector3Int GetCurrentCellPosition()
-    {
-        // Debug.Log("Exposing Player current cell position: " + currentCellPosition);
-        return currentCellPosition;
     }
 }

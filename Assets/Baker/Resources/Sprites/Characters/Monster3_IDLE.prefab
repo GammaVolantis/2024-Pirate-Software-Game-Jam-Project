@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 125230586677496382}
   - component: {fileID: 7676990096465569578}
   - component: {fileID: 4976638161707948003}
-  - component: {fileID: -7077406837339088205}
   m_Layer: 0
-  m_Name: Monster3
+  m_Name: Monster3_IDLE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107,19 +106,3 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &-7077406837339088205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5537149812348610092}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9129f7700c4b9d345a34b3d5ebd64670, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveKey: 101
-  maxHorizontalVerticalDistance: 2
-  maxDiagonalDistance: 1
-  timer: 3
