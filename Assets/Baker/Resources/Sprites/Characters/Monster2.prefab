@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1914930599832332523}
   - component: {fileID: 1935718335019724217}
   - component: {fileID: 556600493885884201}
+  - component: {fileID: -6045523854109724114}
   m_Layer: 0
   m_Name: Monster2
   m_TagString: Untagged
@@ -106,3 +107,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-6045523854109724114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6844069688892414824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9129f7700c4b9d345a34b3d5ebd64670, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveKey: 101
+  maxHorizontalVerticalDistance: 2
+  maxDiagonalDistance: 1
+  timer: 3
