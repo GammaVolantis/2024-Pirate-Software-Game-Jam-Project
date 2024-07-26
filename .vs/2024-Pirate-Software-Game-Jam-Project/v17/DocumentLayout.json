@@ -12,11 +12,11 @@
       "RelativeMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|solutionrelative:assets\\scriptableobjects\\playerstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\assets\\characterattachedhealthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|c:\\users\\stato\\unity\\2024-pirate-software-game-jam-project\\assets\\characterattachedhealthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|solutionrelative:assets\\characterattachedhealthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|c:\\users\\stato\\unity\\2024-pirate-software-game-jam-project\\assets\\scriptableobjects\\cardstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\assets\\scriptableobjects\\cardstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|solutionrelative:assets\\scriptableobjects\\cardstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
 =======
       "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|C:\\Users\\super\\Documents\\2024-Pirate-Software-Game-Jam-Project\\assets\\baker\\resources\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -104,7 +104,7 @@
               "RelativeDocumentMoniker": "Assets\\CharacterAttachedHealthBar.cs",
               "ToolTip": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\CharacterAttachedHealthBar.cs",
               "RelativeToolTip": "Assets\\CharacterAttachedHealthBar.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAASAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-25T04:05:54.19Z",
 =======
@@ -129,6 +129,7 @@
               "RelativeDocumentMoniker": "Assets\\PlayerTest.cs",
               "ToolTip": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\PlayerTest.cs",
               "RelativeToolTip": "Assets\\PlayerTest.cs",
+<<<<<<< Updated upstream
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
 =======
               "DocumentIndex": 3,
@@ -164,6 +165,9 @@
               "RelativeToolTip": "Assets\\Baker\\Resources\\PlayerMovement.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAKMAAAAAAAAA",
 >>>>>>> Stashed changes
+=======
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwCoAAAAeAAAA",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-25T03:38:58.23Z",
               "EditorCaption": ""
@@ -183,7 +187,7 @@
               "RelativeDocumentMoniker": "Assets\\ScriptableObjects\\PlayerStats.cs",
               "ToolTip": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\ScriptableObjects\\PlayerStats.cs",
               "RelativeToolTip": "Assets\\ScriptableObjects\\PlayerStats.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAgAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBcAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-25T04:21:33.352Z",
               "EditorCaption": ""

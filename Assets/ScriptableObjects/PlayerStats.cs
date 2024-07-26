@@ -19,8 +19,8 @@ public class PlayerStats : ScriptableObject
         if (curHealth <= 0) {
             //Change Scene to Lose Scene
 
-            //Reset Player Stats
-            ResetPlayerStats();
+            ////Reset Player Stats
+            //ResetPlayerStats();
         }
     }
     public int GetMaxHealth() { 
