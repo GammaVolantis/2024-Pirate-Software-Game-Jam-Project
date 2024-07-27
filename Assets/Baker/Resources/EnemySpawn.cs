@@ -12,10 +12,13 @@ public class EnemySpawn : MonoBehaviour
 
     void Start()
     {
+        UnityEngine.Debug.Log("EnemySpawn Start method called.");
+
         director = FindObjectOfType<Director>();
         if (director == null)
         {
-            Debug.LogError("Director instance not found!");
+            UnityEngine.Debug.LogError("Director instance not found!");
+            return;
         }
 
         StartCoroutine(SpawnEnemies());
@@ -23,38 +26,70 @@ public class EnemySpawn : MonoBehaviour
 
     IEnumerator SpawnEnemies()
     {
-        // Wait for the Tilemap to be generated
+        UnityEngine.Debug.Log("Waiting for tilemap generation.");
         yield return new WaitForSeconds(director.waitTime);
+
+        // Wait until the Director has initialized enemy positions
+        while (!director.enemiesInitialized)
+        {
+            yield return null; // Wait for the next frame
+        }
 
         // Ensure the Tilemap is assigned
         if (tilemap == null)
         {
-            Debug.LogError("Tilemap not assigned.");
+            UnityEngine.Debug.LogError("Tilemap not assigned.");
             yield break;
         }
 
         // Ensure the Enemies parent is assigned
         if (director.enemiesParent == null)
         {
-            Debug.LogError("Enemies parent not assigned in Director.");
+            UnityEngine.Debug.LogError("Enemies parent not assigned in Director.");
             yield break;
         }
 
         // Get enemy positions from the Director
         List<Vector3Int> enemyPositions = director.GetEnemyGridPositions();
+        if (enemyPositions.Count == 0)
+        {
+            UnityEngine.Debug.LogError("No enemy positions found.");
+            yield break;
+        }
 
         foreach (Vector3Int gridPosition in enemyPositions)
         {
-            // Select a random eligible prefab
-            int randomPrefabIndex = eligiblePrefabIndices[Random.Range(0, eligiblePrefabIndices.Count)];
-            GameObject characterPrefab = characterPrefabs[randomPrefabIndex];
+            // Ensure there are eligible prefabs to choose from
+            if (eligiblePrefabIndices.Count == 0 || characterPrefabs.Count == 0)
+            {
+                UnityEngine.Debug.LogError("No eligible prefabs or character prefabs assigned.");
+                yield break;
+            }
 
-            // Convert grid position to world position
+            int randomPrefabIndex = UnityEngine.Random.Range(0, eligiblePrefabIndices.Count);
+            if (randomPrefabIndex < 0 || randomPrefabIndex >= characterPrefabs.Count)
+            {
+                UnityEngine.Debug.LogError("Random prefab index out of bounds.");
+                yield break;
+            }
+
+            GameObject characterPrefab = characterPrefabs[eligiblePrefabIndices[randomPrefabIndex]];
+            if (characterPrefab == null)
+            {
+                UnityEngine.Debug.LogError("Character prefab is null.");
+                yield break;
+            }
+
             Vector3 worldPosition = tilemap.CellToWorld(gridPosition) + new Vector3(tilemap.cellSize.x / 2, tilemap.cellSize.y / 2, 0);
+            UnityEngine.Debug.Log($"Instantiating enemy at: {worldPosition} (Grid Position: {gridPosition})");
 
-            // Instantiate the character at the world position as a child of the enemiesParent
             GameObject enemy = Instantiate(characterPrefab, worldPosition, Quaternion.identity, director.enemiesParent);
-            Debug.Log("Spawned enemy at: " + worldPosition + " (Grid Position: " + gridPosition + ")");
+            if (enemy == null)
+            {
+                UnityEngine.Debug.LogError("Failed to instantiate enemy.");
+                yield break;
+            }
+            UnityEngine.Debug.Log("Spawned enemy successfully.");
         }
     }
 }

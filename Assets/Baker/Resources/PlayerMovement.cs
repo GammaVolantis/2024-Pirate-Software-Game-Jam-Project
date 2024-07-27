@@ -86,6 +86,14 @@ public class PlayerMovement : MonoBehaviour
             int row = cellPosition.y - tilemap.cellBounds.yMin;
             int col = cellPosition.x - tilemap.cellBounds.xMin;
 
+            foreach (var enemyPos in director.GetEnemyGridPositions())
+            {
+                if (enemyPos == cellPosition)
+                {
+                    return false;
+                }
+            }
+
             if (row >= 0 && row < grid.GetLength(0) && col >= 0 && col < grid.GetLength(1))
             {
                 return grid[row, col] == 2; // Check if the tile is a floor tile
