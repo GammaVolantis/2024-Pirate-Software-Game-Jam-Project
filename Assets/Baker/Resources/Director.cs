@@ -11,6 +11,9 @@ public class Director : MonoBehaviour
     public Transform enemiesParent;
     public List<GameObject> enemies = new List<GameObject>();
 
+    public int minEnemies = 2;
+    public int maxEnemies = 4;
+
     private Vector3Int playerGridPosition;
     private List<Vector3Int> enemyGridPositions = new List<Vector3Int>();
     public bool enemiesInitialized = false; // Flag to indicate enemy initialization
@@ -119,8 +122,6 @@ public class Director : MonoBehaviour
 
     private void DetermineEnemyPositions(List<Vector3Int> floorPositions, Vector3Int baseGridOffset)
     {
-        int minEnemies = 2;
-        int maxEnemies = 4;
         int minDistanceFromPlayer = 2;
 
         int numEnemies = UnityEngine.Random.Range(minEnemies, maxEnemies + 1);
