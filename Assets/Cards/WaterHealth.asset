@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c378b5dd1f7f624a87e19564fd19bb6, type: 3}
   m_Name: WaterHealth
   m_EditorClassIdentifier: 
-  cardName: WaterEssence
+  cardName: Water
   target: Player
   actionValue: 4
-  actionColor: {r: 0, g: 0, b: 0, a: 0}
+  actionColor: {r: 0.4830341, g: 1, b: 0.36320752, a: 1}
   range: 0
-  artwork: {fileID: 0}
+  artwork: {fileID: 21300000, guid: e0a5c59e0d2280e45a901f79a660fa0e, type: 3}

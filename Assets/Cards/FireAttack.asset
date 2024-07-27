@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c378b5dd1f7f624a87e19564fd19bb6, type: 3}
   m_Name: FireAttack
   m_EditorClassIdentifier: 
-  cardName: FireEssence
+  cardName: Fire
   target: Enemy
   actionValue: 3
-  actionColor: {r: 0, g: 0, b: 0, a: 0}
+  actionColor: {r: 1, g: 0.0627451, b: 0.0627451, a: 1}
   range: 2
-  artwork: {fileID: 0}
+  artwork: {fileID: 21300000, guid: f71371911ebab654a8cf44112780222b, type: 3}

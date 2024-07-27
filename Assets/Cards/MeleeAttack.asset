@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c378b5dd1f7f624a87e19564fd19bb6, type: 3}
   m_Name: MeleeAttack
   m_EditorClassIdentifier: 
-  cardName: 
-  target: 
-  actionValue: 0
-  actionColor: {r: 0, g: 0, b: 0, a: 0}
-  range: 0
-  artwork: {fileID: 0}
+  cardName: Fist
+  target: Enemy
+  actionValue: 2
+  actionColor: {r: 1, g: 0.06132078, b: 0.06132078, a: 1}
+  range: 1
+  artwork: {fileID: 21300000, guid: 01a67941e1e117e468427a53be419af6, type: 3}
