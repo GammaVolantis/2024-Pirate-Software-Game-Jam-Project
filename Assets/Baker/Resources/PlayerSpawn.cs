@@ -8,9 +8,10 @@ public class PlayerSpawn : MonoBehaviour
 
     private Vector3Int spawnPosition;
     private Director director;
-
+    private LocationData locationData;
     void Start()
     {
+        locationData = Resources.Load<LocationData>("AllLocationInformation");
         director = FindObjectOfType<Director>();
     }
 
@@ -24,7 +25,7 @@ public class PlayerSpawn : MonoBehaviour
     {
         // Convert the tile position to world position using the Tilemap's method
         Vector3 worldPosition = tilemap.CellToWorld(spawnPosition);
-
+        locationData.UpdatePlayerPosition(spawnPosition, worldPosition);
         // Center the character on the tile by offsetting by half of the tile size
         Vector3 offset = new Vector3(tilemap.cellSize.x / 2, tilemap.cellSize.y / 2, 0);
         worldPosition += offset;

@@ -10,6 +10,7 @@ public class Director : MonoBehaviour
     public float waitTime = 1f;
     public Transform enemiesParent;
     public List<GameObject> enemies = new List<GameObject>();
+    public LocationData locationData;
 
     public int minEnemies = 2;
     public int maxEnemies = 4;
@@ -21,7 +22,7 @@ public class Director : MonoBehaviour
     void Start()
     {
         UnityEngine.Debug.Log("Director Start method called.");
-
+        locationData = Resources.Load<LocationData>("AllLocationInformation");
         StartCoroutine(PositionCharacterAfterGeneration());
 
         foreach (Transform enemy in enemiesParent)

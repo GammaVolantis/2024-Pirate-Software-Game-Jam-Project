@@ -10,12 +10,14 @@ public class EnemySpawn : MonoBehaviour
     public List<GameObject> characterPrefabs; // List of all possible character prefabs
     public List<int> eligiblePrefabIndices; // Indices of eligible prefabs in the characterPrefabs list
     private Director director;
+    private LocationData locationData;
     private int iter = 0;
 
     void Start()
     {
         UnityEngine.Debug.Log("EnemySpawn Start method called.");
-
+        locationData = Resources.Load<LocationData>("AllLocationInformation");
+        locationData.ResetEnemiesLocationData();
         director = FindObjectOfType<Director>();
         if (director == null)
         {
@@ -84,6 +86,7 @@ public class EnemySpawn : MonoBehaviour
 
             Vector3 worldPosition = tilemap.CellToWorld(gridPosition) + new Vector3(tilemap.cellSize.x / 2, tilemap.cellSize.y / 2, 0);
             UnityEngine.Debug.Log($"Instantiating enemy at: {worldPosition} (Grid Position: {gridPosition})");
+            locationData.AddEnemyLocations(gridPosition,worldPosition);
 
             GameObject enemy = Instantiate(characterPrefab, worldPosition, Quaternion.identity, director.enemiesParent);
             EnemyMovement enemyMovement = enemy.GetComponent<EnemyMovement>();

@@ -1,42 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\super\\Documents\\2024-Pirate-Software-Game-Jam-Project\\",
+  "WorkspaceRootPath": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\super\\Documents\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Baker\\Resources\\PlayerSpawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Baker\\Resources\\PlayerSpawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|c:\\users\\stato\\unity\\2024-pirate-software-game-jam-project\\assets\\baker\\resources\\director.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|solutionrelative:assets\\baker\\resources\\director.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\super\\Documents\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Baker\\Resources\\EnemySpawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Baker\\Resources\\EnemySpawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|c:\\users\\stato\\unity\\2024-pirate-software-game-jam-project\\assets\\scriptableobjects\\locationdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|solutionrelative:assets\\scriptableobjects\\locationdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\super\\Documents\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Baker\\Resources\\Director.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Baker\\Resources\\Director.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\super\\Documents\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Baker\\Resources\\EnemyMovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Baker\\Resources\\EnemyMovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\super\\Documents\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Baker\\Resources\\PlayerMovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Baker\\Resources\\PlayerMovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\super\\Documents\\2024-Pirate-Software-Game-Jam-Project\\Assets\\ScriptableObjects\\CardStats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\ScriptableObjects\\CardStats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\super\\Documents\\2024-Pirate-Software-Game-Jam-Project\\Assets\\CharacterAttachedHealthBar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\CharacterAttachedHealthBar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\super\\Documents\\2024-Pirate-Software-Game-Jam-Project\\Assets\\PlayerTest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\PlayerTest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\super\\Documents\\2024-Pirate-Software-Game-Jam-Project\\Assets\\ScriptableObjects\\PlayerStats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\ScriptableObjects\\PlayerStats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\assets\\baker\\resources\\draggable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|solutionrelative:assets\\baker\\resources\\draggable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -49,117 +25,48 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Draggable.cs",
+              "DocumentMoniker": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Baker\\Resources\\Draggable.cs",
+              "RelativeDocumentMoniker": "Assets\\Baker\\Resources\\Draggable.cs",
+              "ToolTip": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Baker\\Resources\\Draggable.cs",
+              "RelativeToolTip": "Assets\\Baker\\Resources\\Draggable.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T20:28:06.697Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PlayerSpawn.cs",
-              "DocumentMoniker": "C:\\Users\\super\\Documents\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Baker\\Resources\\PlayerSpawn.cs",
-              "RelativeDocumentMoniker": "Assets\\Baker\\Resources\\PlayerSpawn.cs",
-              "ToolTip": "C:\\Users\\super\\Documents\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Baker\\Resources\\PlayerSpawn.cs",
-              "RelativeToolTip": "Assets\\Baker\\Resources\\PlayerSpawn.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "Director.cs",
+              "DocumentMoniker": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Baker\\Resources\\Director.cs",
+              "RelativeDocumentMoniker": "Assets\\Baker\\Resources\\Director.cs",
+              "ToolTip": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Baker\\Resources\\Director.cs",
+              "RelativeToolTip": "Assets\\Baker\\Resources\\Director.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T04:59:36.777Z",
+              "WhenOpened": "2024-07-26T03:22:26.935Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PlayerMovement.cs",
-              "DocumentMoniker": "C:\\Users\\super\\Documents\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Baker\\Resources\\PlayerMovement.cs",
-              "RelativeDocumentMoniker": "Assets\\Baker\\Resources\\PlayerMovement.cs",
-              "ToolTip": "C:\\Users\\super\\Documents\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Baker\\Resources\\PlayerMovement.cs",
-              "RelativeToolTip": "Assets\\Baker\\Resources\\PlayerMovement.cs",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAAAFgAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T04:59:30.645Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EnemyMovement.cs",
-              "DocumentMoniker": "C:\\Users\\super\\Documents\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Baker\\Resources\\EnemyMovement.cs",
-              "RelativeDocumentMoniker": "Assets\\Baker\\Resources\\EnemyMovement.cs",
-              "ToolTip": "C:\\Users\\super\\Documents\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Baker\\Resources\\EnemyMovement.cs",
-              "RelativeToolTip": "Assets\\Baker\\Resources\\EnemyMovement.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T04:40:12.157Z"
-            },
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EnemySpawn.cs",
-              "DocumentMoniker": "C:\\Users\\super\\Documents\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Baker\\Resources\\EnemySpawn.cs",
-              "RelativeDocumentMoniker": "Assets\\Baker\\Resources\\EnemySpawn.cs",
-              "ToolTip": "C:\\Users\\super\\Documents\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Baker\\Resources\\EnemySpawn.cs",
-              "RelativeToolTip": "Assets\\Baker\\Resources\\EnemySpawn.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAnwEYAAABdAAAA",
+              "Title": "LocationData.cs",
+              "DocumentMoniker": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\ScriptableObjects\\LocationData.cs",
+              "RelativeDocumentMoniker": "Assets\\ScriptableObjects\\LocationData.cs",
+              "ToolTip": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\ScriptableObjects\\LocationData.cs",
+              "RelativeToolTip": "Assets\\ScriptableObjects\\LocationData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T04:19:08.377Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Director.cs",
-              "DocumentMoniker": "C:\\Users\\super\\Documents\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Baker\\Resources\\Director.cs",
-              "RelativeDocumentMoniker": "Assets\\Baker\\Resources\\Director.cs",
-              "ToolTip": "C:\\Users\\super\\Documents\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Baker\\Resources\\Director.cs",
-              "RelativeToolTip": "Assets\\Baker\\Resources\\Director.cs",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAAABcAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T03:22:26.935Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CardStats.cs",
-              "DocumentMoniker": "C:\\Users\\super\\Documents\\2024-Pirate-Software-Game-Jam-Project\\Assets\\ScriptableObjects\\CardStats.cs",
-              "RelativeDocumentMoniker": "Assets\\ScriptableObjects\\CardStats.cs",
-              "ToolTip": "C:\\Users\\super\\Documents\\2024-Pirate-Software-Game-Jam-Project\\Assets\\ScriptableObjects\\CardStats.cs",
-              "RelativeToolTip": "Assets\\ScriptableObjects\\CardStats.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T02:50:17.541Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CharacterAttachedHealthBar.cs",
-              "DocumentMoniker": "C:\\Users\\super\\Documents\\2024-Pirate-Software-Game-Jam-Project\\Assets\\CharacterAttachedHealthBar.cs",
-              "RelativeDocumentMoniker": "Assets\\CharacterAttachedHealthBar.cs",
-              "ToolTip": "C:\\Users\\super\\Documents\\2024-Pirate-Software-Game-Jam-Project\\Assets\\CharacterAttachedHealthBar.cs",
-              "RelativeToolTip": "Assets\\CharacterAttachedHealthBar.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T02:50:17.556Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PlayerTest.cs",
-              "DocumentMoniker": "C:\\Users\\super\\Documents\\2024-Pirate-Software-Game-Jam-Project\\Assets\\PlayerTest.cs",
-              "RelativeDocumentMoniker": "Assets\\PlayerTest.cs",
-              "ToolTip": "C:\\Users\\super\\Documents\\2024-Pirate-Software-Game-Jam-Project\\Assets\\PlayerTest.cs",
-              "RelativeToolTip": "Assets\\PlayerTest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T02:50:17.6Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PlayerStats.cs",
-              "DocumentMoniker": "C:\\Users\\super\\Documents\\2024-Pirate-Software-Game-Jam-Project\\Assets\\ScriptableObjects\\PlayerStats.cs",
-              "RelativeDocumentMoniker": "Assets\\ScriptableObjects\\PlayerStats.cs",
-              "ToolTip": "C:\\Users\\super\\Documents\\2024-Pirate-Software-Game-Jam-Project\\Assets\\ScriptableObjects\\PlayerStats.cs",
-              "RelativeToolTip": "Assets\\ScriptableObjects\\PlayerStats.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBoAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T02:50:17.649Z"
+              "WhenOpened": "2024-07-27T21:37:12.819Z",
+              "EditorCaption": ""
             }
           ]
         }

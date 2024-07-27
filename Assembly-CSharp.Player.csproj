@@ -78,9 +78,10 @@
     <Compile Include="Assets\Baker\Resources\CardScript.cs" />
     <Compile Include="Assets\Baker\Resources\RoomGenerator.cs" />
     <Compile Include="Assets\Baker\Resources\EnemyScript.cs" />
-    <Compile Include="Assets\Baker\Resources\EnemyCardDetection.cs" />
+    <Compile Include="Assets\ScriptableObjects\VirtualGrid.cs" />
     <Compile Include="Assets\Baker\Resources\MouseControl.cs" />
     <Compile Include="Assets\Code\CardController.cs" />
+    <Compile Include="Assets\ScriptableObjects\LocationData.cs" />
     <Compile Include="Assets\Code\PlayerTest.cs" />
   </ItemGroup>
   <ItemGroup>

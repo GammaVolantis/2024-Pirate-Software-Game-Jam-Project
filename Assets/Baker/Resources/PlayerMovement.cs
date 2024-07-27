@@ -11,11 +11,13 @@ public class PlayerMovement : MonoBehaviour
     public RuleTile overlayTile; // RuleTile to use for overlay
     public int maxMovementDistance = 2; // Maximum movement distance setting
     private Vector3Int currentCellPosition; // Store the player's current cell position
+    private LocationData locationData;
 
     private Director director;
 
     void Awake()
     {
+        locationData = Resources.Load<LocationData>("AllLocationInformation");
         if (Instance == null)
         {
             Instance = this;
@@ -118,6 +120,7 @@ public class PlayerMovement : MonoBehaviour
         if (selectedCharacter != null)
         {
             Vector3 worldPosition = tilemap.CellToWorld(cellPosition);
+            locationData.UpdatePlayerPosition(cellPosition, worldPosition);
             Vector3 offset = new Vector3(tilemap.cellSize.x / 2, tilemap.cellSize.y / 2, 0);
             worldPosition += offset;
             selectedCharacter.transform.position = worldPosition;

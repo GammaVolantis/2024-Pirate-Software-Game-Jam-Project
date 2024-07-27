@@ -11,6 +11,7 @@ public class EnemyMovement : MonoBehaviour
 
     private Tilemap tilemap;
     private Director director;
+    private LocationData locationData;
     private List<GameObject> enemies;
     private bool initialized = false;
     private bool isMoving = false;
@@ -21,6 +22,7 @@ public class EnemyMovement : MonoBehaviour
     void Start()
     {
         // Initialize references
+        locationData = Resources.Load<LocationData>("AllLocationInformation");
         Initialize();
     }
 
@@ -79,6 +81,7 @@ public class EnemyMovement : MonoBehaviour
             transform.position = worldPosition;
             //int enemyIndex = director.enemies.IndexOf(gameObject);
             director.UpdateEnemyGridPosition(enIndex, targetPosition);
+            locationData.UpdateEnemyLocation(targetPosition, worldPosition, enIndex);
             Debug.Log($"Updated enemy grid position at index {enIndex}: {targetPosition}");
             foreach (var enemyPos in director.GetEnemyGridPositions()) {
                 Debug.Log($"Enemy Loc at:: {enemyPos}");

@@ -8,13 +8,17 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     private CanvasGroup canvasGroup;
     private Vector3 startingPos;
     private Vector3 startingSize;
-
+    private CardStats cardStats;
+    private LocationData locationData;
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
         canvas = GetComponentInParent<Canvas>();
         startingPos = rectTransform.anchoredPosition;
+        CardInfoScript cardInfo = GetComponent<CardInfoScript>();
+        cardStats = cardInfo.card;
+        locationData = Resources.Load<LocationData>("AllLocationInformation");
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -35,9 +39,22 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        Ray ray = Camera.main.ScreenPointToRay(eventData.position);
+        Vector3 finalPos = ray.origin;
+        finalPos.z = 0;
+        if (cardStats.target == "Player") 
+        { 
+
+        }
+        else if (cardStats.target == "Enemy") 
+        {
+            
+        }
         Debug.Log("Card Dropped");
         canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
         rectTransform.anchoredPosition = startingPos;
+        
+
     }
 }
