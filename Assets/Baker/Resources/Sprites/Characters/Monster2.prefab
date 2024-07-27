@@ -226,6 +226,7 @@ GameObject:
   - component: {fileID: 1935718335019724217}
   - component: {fileID: 556600493885884201}
   - component: {fileID: -6045523854109724114}
+  - component: {fileID: 4496754065115027413}
   m_Layer: 0
   m_Name: Monster2
   m_TagString: Enemy
@@ -338,3 +339,15 @@ MonoBehaviour:
   maxHorizontalVerticalDistance: 2
   maxDiagonalDistance: 1
   timer: 3
+--- !u!114 &4496754065115027413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6844069688892414824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36147a7502f0fef42be0d1683454dfd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -211,6 +211,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 611635842765559509, guid: 67acb1c133327f342945977529877981, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f71371911ebab654a8cf44112780222b, type: 3}
     - target: {fileID: 1752300771277883308, guid: 67acb1c133327f342945977529877981, type: 3}
       propertyPath: mainCamera
       value: 
@@ -482,6 +486,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 611635842765559509, guid: 67acb1c133327f342945977529877981, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ad17e27d38dbb3e4e88c4e633ada936d, type: 3}
     - target: {fileID: 1752300771277883308, guid: 67acb1c133327f342945977529877981, type: 3}
       propertyPath: mainCamera
       value: 
@@ -685,6 +693,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 611635842765559509, guid: 67acb1c133327f342945977529877981, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e0a5c59e0d2280e45a901f79a660fa0e, type: 3}
     - target: {fileID: 1752300771277883308, guid: 67acb1c133327f342945977529877981, type: 3}
       propertyPath: mainCamera
       value: 
@@ -2094,6 +2106,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 611635842765559509, guid: 67acb1c133327f342945977529877981, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 01a67941e1e117e468427a53be419af6, type: 3}
     - target: {fileID: 611635842765559509, guid: 67acb1c133327f342945977529877981, type: 3}
       propertyPath: m_Maskable
       value: 1
