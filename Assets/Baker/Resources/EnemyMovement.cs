@@ -14,6 +14,8 @@ public class EnemyMovement : MonoBehaviour
     private List<GameObject> enemies;
     private bool initialized = false;
     private bool isMoving = false;
+    private int enIndex;
+
     public float timer = 3;
 
     void Start()
@@ -71,13 +73,16 @@ public class EnemyMovement : MonoBehaviour
         Vector3Int targetPosition = FindBestMovePosition(enemyGridPosition);
         Debug.Log(targetPosition.ToString());
 
-        if (targetPosition != enemyGridPosition)
+        if (targetPosition != enemyGridPosition && targetPosition != director.GetPlayerGridPosition())
         {
             Vector3 worldPosition = tilemap.CellToWorld(targetPosition) + new Vector3(tilemap.cellSize.x / 2, tilemap.cellSize.y / 2, 0);
             transform.position = worldPosition;
-            int enemyIndex = director.enemies.IndexOf(gameObject);
-            director.UpdateEnemyGridPosition(enemyIndex, targetPosition);
-            Debug.Log($"Updated enemy grid position at index {enemyIndex}: {targetPosition}");
+            //int enemyIndex = director.enemies.IndexOf(gameObject);
+            director.UpdateEnemyGridPosition(enIndex, targetPosition);
+            Debug.Log($"Updated enemy grid position at index {enIndex}: {targetPosition}");
+            foreach (var enemyPos in director.GetEnemyGridPositions()) {
+                Debug.Log($"Enemy Loc at:: {enemyPos}");
+            }
         }
     }
 
@@ -255,5 +260,10 @@ public class EnemyMovement : MonoBehaviour
         return (dx <= maxHorizontalVerticalDistance && dy == 0) ||
                (dy <= maxHorizontalVerticalDistance && dx == 0) ||
                (dx == dy && dx <= maxDiagonalDistance);
+    }
+
+    public void SetEnemyIndexVal(int index)
+    {
+        enIndex = index;
     }
 }

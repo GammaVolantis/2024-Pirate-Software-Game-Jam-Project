@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 using System.Collections;
 using System.Collections.Generic;
+using System;
 
 public class EnemySpawn : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class EnemySpawn : MonoBehaviour
     public List<GameObject> characterPrefabs; // List of all possible character prefabs
     public List<int> eligiblePrefabIndices; // Indices of eligible prefabs in the characterPrefabs list
     private Director director;
+    private int iter = 0;
 
     void Start()
     {
@@ -84,12 +86,18 @@ public class EnemySpawn : MonoBehaviour
             UnityEngine.Debug.Log($"Instantiating enemy at: {worldPosition} (Grid Position: {gridPosition})");
 
             GameObject enemy = Instantiate(characterPrefab, worldPosition, Quaternion.identity, director.enemiesParent);
+            EnemyMovement enemyMovement = enemy.GetComponent<EnemyMovement>();
+            enemyMovement.SetEnemyIndexVal(iter);
+            iter += 1;
             if (enemy == null)
             {
                 UnityEngine.Debug.LogError("Failed to instantiate enemy.");
                 yield break;
             }
-            UnityEngine.Debug.Log("Spawned enemy successfully.");
+            else 
+            { 
+                UnityEngine.Debug.Log("Spawned enemy successfully."); 
+            }
         }
     }
 }

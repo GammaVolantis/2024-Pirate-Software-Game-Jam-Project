@@ -27,27 +27,22 @@ public class PlayerTest : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && player.curHealth>0) 
         {
             //change in health
-            player.newHealthValue(player.GetCurrentHealth(),-20);
-            //set new player healthbar value
-            healthFill.transform.localScale = new Vector3(healthScaleFactor * player.curHealth, healthFill.transform.localScale.y, 0f);
-            float difHealth = -20;
-            healthFill.transform.position = new Vector3(healthFill.transform.position.x + difHealth * healthScaleFactor / 2, healthFill.transform.position.y, 0f);
-
+            HealthBarUpdate(-20);
         }
         if (Input.GetKeyDown(KeyCode.LeftShift) && player.curHealth <100)
         {
             //change in health
-            player.newHealthValue(player.GetCurrentHealth(), 20);
-            //set new player healthbar value
-            healthFill.transform.localScale = new Vector3(healthScaleFactor * player.curHealth, healthFill.transform.localScale.y, 0f);
-            float difHealth = 20;
-            healthFill.transform.position = new Vector3(healthFill.transform.position.x + difHealth * healthScaleFactor / 2, healthFill.transform.position.y, 0f);
-
+            HealthBarUpdate(20);
         }
     }
 
-    private void HealthBarUpdate()
+    private void HealthBarUpdate(int hC)
     {
-       
+        player.newHealthValue(player.GetCurrentHealth(), hC);
+        //set new player healthbar value
+        healthFill.transform.localScale = new Vector3(healthScaleFactor * player.curHealth, healthFill.transform.localScale.y, 0f);
+        float difHealth = hC;
+        healthFill.transform.position = new Vector3(healthFill.transform.position.x + difHealth * healthScaleFactor / 2, healthFill.transform.position.y, 0f);
+
     }
 }
