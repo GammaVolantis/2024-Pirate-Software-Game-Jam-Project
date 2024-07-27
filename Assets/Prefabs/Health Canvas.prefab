@@ -31,7 +31,7 @@ RectTransform:
   m_LocalScale: {x: 0.015060241, y: 0.015060241, z: 0.015060241}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5650599122394785995}
+  - {fileID: 6253770768100455353}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -84,7 +84,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &9058910474899203440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,7 +274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d50f05accae55f54b9df7638900db152, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 8744416820835712229}
+  slider: {fileID: 0}
 --- !u!114 &1122157568048441997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,19 +288,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 0}
---- !u!224 &5650599122394785995 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 8562297191965017290, guid: 9c4e267b80bc3a747845f8291e77bc8b, type: 3}
+--- !u!4 &6253770768100455353 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7957945727362441144, guid: 9c4e267b80bc3a747845f8291e77bc8b, type: 3}
   m_PrefabInstance: {fileID: 4087463170633886721}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8744416820835712229 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4747918653759099108, guid: 9c4e267b80bc3a747845f8291e77bc8b, type: 3}
-  m_PrefabInstance: {fileID: 4087463170633886721}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 624918067904774313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

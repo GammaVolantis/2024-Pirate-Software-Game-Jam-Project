@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\ScriptableObjects\CardStats.cs" />
+    <Compile Include="Assets\CardInfoScript.cs" />
     <Compile Include="Assets\Baker\Resources\Director.cs" />
     <Compile Include="Assets\Code\MouseController.cs" />
     <Compile Include="Assets\HealthBarFollow.cs" />
@@ -78,6 +79,7 @@
     <Compile Include="Assets\LocationChecker.cs" />
     <Compile Include="Assets\PlayerTest.cs" />
     <Compile Include="Assets\Baker\Resources\EnemyScript.cs" />
+    <Compile Include="Assets\Baker\Resources\EnemyCardDetection.cs" />
     <Compile Include="Assets\Baker\Resources\MouseControl.cs" />
     <Compile Include="Assets\Code\CardController.cs" />
   </ItemGroup>
