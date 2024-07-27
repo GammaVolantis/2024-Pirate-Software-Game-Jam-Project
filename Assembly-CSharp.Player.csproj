@@ -59,29 +59,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\ScriptableObjects\CardStats.cs" />
-    <Compile Include="Assets\CardInfoScript.cs" />
+    <Compile Include="Assets\Code\HealthBar.cs" />
+    <Compile Include="Assets\Code\CardInfoScript.cs" />
     <Compile Include="Assets\Baker\Resources\Director.cs" />
     <Compile Include="Assets\Code\MouseController.cs" />
-    <Compile Include="Assets\HealthBarFollow.cs" />
+    <Compile Include="Assets\Code\CharacterAttachedHealthBar.cs" />
+    <Compile Include="Assets\Code\LocationChecker.cs" />
     <Compile Include="Assets\Baker\baker_test.cs" />
     <Compile Include="Assets\ScriptableObjects\PlayerStats.cs" />
     <Compile Include="Assets\Baker\Resources\EnemySpawn.cs" />
     <Compile Include="Assets\Baker\Resources\PlayerMovement.cs" />
     <Compile Include="Assets\Baker\Resources\Draggable.cs" />
+    <Compile Include="Assets\Code\HealthBarFollow.cs" />
     <Compile Include="Assets\Baker\Resources\EnemyMovement.cs" />
     <Compile Include="Assets\Baker\Resources\PlayerSpawn.cs" />
-    <Compile Include="Assets\CharacterAttachedHealthBar.cs" />
     <Compile Include="Assets\Baker\Resources\HealthMeter.cs" />
-    <Compile Include="Assets\HealthBar.cs" />
     <Compile Include="Assets\Baker\Resources\CharacterAttributes.cs" />
     <Compile Include="Assets\Baker\Resources\CardScript.cs" />
     <Compile Include="Assets\Baker\Resources\RoomGenerator.cs" />
-    <Compile Include="Assets\LocationChecker.cs" />
-    <Compile Include="Assets\PlayerTest.cs" />
     <Compile Include="Assets\Baker\Resources\EnemyScript.cs" />
     <Compile Include="Assets\Baker\Resources\EnemyCardDetection.cs" />
     <Compile Include="Assets\Baker\Resources\MouseControl.cs" />
     <Compile Include="Assets\Code\CardController.cs" />
+    <Compile Include="Assets\Code\PlayerTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

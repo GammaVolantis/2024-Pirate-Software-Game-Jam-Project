@@ -309,6 +309,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 753103910}
     m_Modifications:
+    - target: {fileID: 157181524795108297, guid: 67acb1c133327f342945977529877981, type: 3}
+      propertyPath: card
+      value: 
+      objectReference: {fileID: 11400000, guid: 1ee2981f01c68b446b80555baf75575d, type: 2}
     - target: {fileID: 321309233788850115, guid: 67acb1c133327f342945977529877981, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1107,6 +1111,8 @@ MonoBehaviour:
   enemies:
   - {fileID: 6844069688892414824, guid: ee55a3d39b0ff3647aef40930a60478b, type: 3}
   - {fileID: 5537149812348610092, guid: 4ec25b4e1b438ac40b4653f5623bfb99, type: 3}
+  minEnemies: 2
+  maxEnemies: 4
   enemiesInitialized: 0
 --- !u!1 &1281098942 stripped
 GameObject:
