@@ -34,6 +34,14 @@ public class LocationData : ScriptableObject
     {
         return enemiesVirtualLoc[loc];
     }
+    public List<Vector3> GetAllEnemyReal()
+    { 
+        return enemiesRealLoc;
+    }
+    public List<Vector3Int> GetAllEnemyVirtual() 
+    {
+        return enemiesVirtualLoc;
+    }
     public Vector3 GetEnemyReal(int loc) 
     { 
         return enemiesRealLoc[loc];

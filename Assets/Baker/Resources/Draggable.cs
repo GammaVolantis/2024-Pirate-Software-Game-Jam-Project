@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -43,12 +44,22 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
         Vector3 finalPos = ray.origin;
         finalPos.z = 0;
         if (cardStats.target == "Player") 
-        { 
-
+        {
+            
         }
         else if (cardStats.target == "Enemy") 
         {
-            
+            int enemyLoc = FindClosestEnemy(finalPos);
+            Vector3Int enemyPos = locationData.GetEnemyVirtual(enemyLoc);
+            Debug.Log("enemyPos=" + enemyPos + "   enemyIter= " + enemyLoc);
+            Vector3Int playerPos = locationData.GetPlayerVirtual();
+            Debug.Log("playerPos" + playerPos);
+            float playerToTarget = Mathf.Sqrt(Mathf.Pow(enemyPos.x - playerPos.x, 2) + Mathf.Pow(enemyPos.y - playerPos.y, 2));
+            if (playerToTarget <= cardStats.range)  //Not Correct
+            {
+                Debug.Log("Attacking Enemy!!! DistanceToTarget= "+ playerToTarget );
+            }
+
         }
         Debug.Log("Card Dropped");
         canvasGroup.alpha = 1f;
@@ -56,5 +67,31 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
         rectTransform.anchoredPosition = startingPos;
         
 
+    }
+
+
+    private int FindClosestEnemy(Vector3 finalPos) 
+    {
+        List<float> distance = new List<float>();
+        float tempDistance;
+        foreach (Vector3 enemy in locationData.GetAllEnemyReal())
+        {
+            tempDistance = Mathf.Sqrt(Mathf.Pow(finalPos.x - enemy.x,2)+ Mathf.Pow(finalPos.y - enemy.y, 2));
+            distance.Add(tempDistance);
+        }
+        float lowestVal = distance[0];
+        int lowestValLoc = 0;
+        int tempLoc = 0;
+        foreach (float len in distance)
+        {
+            Debug.Log("lowestVal = " + lowestVal + " > " + len + " = Len");
+            if (lowestVal > len)
+            {
+                lowestVal = len;
+                lowestValLoc = tempLoc;
+            }
+            tempLoc++;
+        }
+        return lowestValLoc;
     }
 }
