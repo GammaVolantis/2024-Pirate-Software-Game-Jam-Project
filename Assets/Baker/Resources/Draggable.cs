@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -45,21 +46,29 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
         finalPos.z = 0;
         if (cardStats.target == "Player") 
         {
-            
+            Vector3 playerLoc = locationData.GetPlayerReal();
+            if (Mathf.Sqrt(Mathf.Pow(finalPos.x-playerLoc.x,2)+Mathf.Pow(finalPos.y - playerLoc.y, 2)) <=1) 
+            {
+                Debug.Log("Used Card on Player!!!");
+            }
         }
         else if (cardStats.target == "Enemy") 
         {
             int enemyLoc = FindClosestEnemy(finalPos);
-            Vector3Int enemyPos = locationData.GetEnemyVirtual(enemyLoc);
-            Debug.Log("enemyPos=" + enemyPos + "   enemyIter= " + enemyLoc);
-            Vector3Int playerPos = locationData.GetPlayerVirtual();
-            Debug.Log("playerPos" + playerPos);
-            float playerToTarget = Mathf.Sqrt(Mathf.Pow(enemyPos.x - playerPos.x, 2) + Mathf.Pow(enemyPos.y - playerPos.y, 2));
-            if (playerToTarget <= cardStats.range)  //Not Correct
+            if (enemyLoc != -1) 
             {
-                Debug.Log("Attacking Enemy!!! DistanceToTarget= "+ playerToTarget );
+                Vector3Int enemyPos = locationData.GetEnemyVirtual(enemyLoc);
+                Debug.Log("enemyPos=" + enemyPos + "   enemyIter= " + enemyLoc);
+                Vector3Int playerPos = locationData.GetPlayerVirtual();
+                Debug.Log("playerPos" + playerPos);
+                float playerToTarget = Mathf.Sqrt(Mathf.Pow(enemyPos.x - playerPos.x, 2) + Mathf.Pow(enemyPos.y - playerPos.y, 2));
+                if (playerToTarget <= cardStats.range)  //Not Correct
+                {
+                    Debug.Log("Attacking Enemy!!! DistanceToTarget= " + playerToTarget);
+                    GameObject dieEnemy = locationData.GetEnemyObject(enemyLoc);
+                    Destroy(dieEnemy);
+                }
             }
-
         }
         Debug.Log("Card Dropped");
         canvasGroup.alpha = 1f;
@@ -92,6 +101,13 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
             }
             tempLoc++;
         }
-        return lowestValLoc;
+        if (lowestVal < 1)
+        {
+            return lowestValLoc;
+        }
+        else 
+        {
+            return -1;
+        }
     }
 }

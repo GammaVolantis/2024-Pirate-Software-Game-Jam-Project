@@ -10,12 +10,15 @@ public class LocationData : ScriptableObject
     private List<Vector3> enemiesRealLoc;
     private Vector3Int playerVirtualLoc;
     private Vector3 playerRealLoc;
+    private List<GameObject> enemies;
+    private GameObject player;
 
     //Enemies Methods
-    public void AddEnemyLocations(Vector3Int evl, Vector3 erl) 
+    public void AddEnemyLocations(Vector3Int evl, Vector3 erl, GameObject enemy) 
     { 
         enemiesVirtualLoc.Add(evl);
         enemiesRealLoc.Add(erl);
+        enemies.Add(enemy);
     }
     public void UpdateEnemyLocation(Vector3Int evl, Vector3 erl, int loc) 
     {
@@ -30,9 +33,17 @@ public class LocationData : ScriptableObject
     {
         enemiesRealLoc[loc] = erl;
     }
-    public Vector3Int GetEnemyVirtual(int loc) 
+    public Vector3Int GetEnemyVirtual(int loc)
     {
         return enemiesVirtualLoc[loc];
+    }
+    public Vector3 GetEnemyReal(int loc)
+    {
+        return enemiesRealLoc[loc];
+    }
+    public GameObject GetEnemyObject(int loc) 
+    {
+        return enemies[loc];
     }
     public List<Vector3> GetAllEnemyReal()
     { 
@@ -42,14 +53,11 @@ public class LocationData : ScriptableObject
     {
         return enemiesVirtualLoc;
     }
-    public Vector3 GetEnemyReal(int loc) 
-    { 
-        return enemiesRealLoc[loc];
-    }
     public void ResetEnemiesLocationData() 
     { 
         enemiesVirtualLoc.Clear();
         enemiesRealLoc.Clear();
+        enemies.Clear();
     }
 
     //Player Methods

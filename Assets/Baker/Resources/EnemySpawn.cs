@@ -86,9 +86,8 @@ public class EnemySpawn : MonoBehaviour
 
             Vector3 worldPosition = tilemap.CellToWorld(gridPosition) + new Vector3(tilemap.cellSize.x / 2, tilemap.cellSize.y / 2, 0);
             UnityEngine.Debug.Log($"Instantiating enemy at: {worldPosition} (Grid Position: {gridPosition})");
-            locationData.AddEnemyLocations(gridPosition,worldPosition);
-
             GameObject enemy = Instantiate(characterPrefab, worldPosition, Quaternion.identity, director.enemiesParent);
+            locationData.AddEnemyLocations(gridPosition, worldPosition, enemy);
             EnemyMovement enemyMovement = enemy.GetComponent<EnemyMovement>();
             enemyMovement.SetEnemyIndexVal(iter);
             iter += 1;
