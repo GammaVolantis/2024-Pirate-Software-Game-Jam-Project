@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7676990096465569578}
   - component: {fileID: 4976638161707948003}
   - component: {fileID: -7077406837339088205}
-  - component: {fileID: -2595562828930235795}
+  - component: {fileID: 2735803313637948472}
   m_Layer: 0
   m_Name: Monster3
   m_TagString: Enemy
@@ -125,6 +125,20 @@ MonoBehaviour:
   maxHorizontalVerticalDistance: 2
   maxDiagonalDistance: 1
   timer: 1
+--- !u!114 &2735803313637948472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5537149812348610092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21ea949b519227d4691aeb046d2620e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 60
+  healthFill: {fileID: 4740436911919796715}
 --- !u!1001 &516682645051905928
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -182,6 +196,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c4e267b80bc3a747845f8291e77bc8b, type: 3}
+--- !u!1 &4740436911919796715 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5107867448184178275, guid: 9c4e267b80bc3a747845f8291e77bc8b, type: 3}
+  m_PrefabInstance: {fileID: 516682645051905928}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7591922563684173872 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7957945727362441144, guid: 9c4e267b80bc3a747845f8291e77bc8b, type: 3}

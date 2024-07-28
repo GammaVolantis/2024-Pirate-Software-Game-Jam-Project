@@ -65,10 +65,14 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
                 float playerToTarget = Mathf.Sqrt(Mathf.Pow(enemyPos.x - playerPos.x, 2) + Mathf.Pow(enemyPos.y - playerPos.y, 2));
                 if (playerToTarget <= cardStats.range)
                 {
+
                     Debug.Log("Attacking Enemy!!! DistanceToTarget= " + playerToTarget);
                     GameObject dieEnemy = locationData.GetEnemyObject(enemyLoc);
-                    Destroy(dieEnemy);
-                    locationData.RemoveEnemy(enemyLoc);
+                    dieEnemy.GetComponent<EnemyHealth>().EnemyHealthUpdate(-cardStats.actionValue*10);
+                    if (dieEnemy.GetComponent<EnemyHealth>().GetHealth() == 0) {
+                        Destroy(dieEnemy);
+                        locationData.RemoveEnemy(enemyLoc);
+                    }
                 }
             }
         }

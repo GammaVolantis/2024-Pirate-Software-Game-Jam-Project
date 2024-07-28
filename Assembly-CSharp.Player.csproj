@@ -73,6 +73,7 @@
     <Compile Include="Assets\Baker\Resources\Code\CardScript.cs" />
     <Compile Include="Assets\Code\HealthBarFollow.cs" />
     <Compile Include="Assets\Baker\Resources\Code\PlayerMovement.cs" />
+    <Compile Include="Assets\EnemyHealth.cs" />
     <Compile Include="Assets\Baker\Resources\Code\Director.cs" />
     <Compile Include="Assets\Baker\Resources\Code\RoomGenerator.cs" />
     <Compile Include="Assets\Baker\Resources\Code\Draggable.cs" />

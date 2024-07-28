@@ -12,18 +12,12 @@ public class HealthBar : MonoBehaviour
     private float healthScaleFactor;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         healthScaleFactor = healthFill.transform.localScale.x / player.maxHealth;
         healthFill.transform.localScale = new Vector3(healthScaleFactor * player.curHealth, healthFill.transform.localScale.y, 0f);
         float difHealth = player.curHealth - player.maxHealth;
         healthFill.transform.position = new Vector3(healthFill.transform.position.x + difHealth * healthScaleFactor / 2, healthFill.transform.position.y, 0f);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     public void HealthBarUpdate(int hC)
@@ -35,6 +29,5 @@ public class HealthBar : MonoBehaviour
         healthFill.transform.localScale = new Vector3(healthScaleFactor * player.curHealth, healthFill.transform.localScale.y, 0f);
         float difHealth = newHealth - oldHealth;
         healthFill.transform.position = new Vector3(healthFill.transform.position.x + difHealth * healthScaleFactor / 2, healthFill.transform.position.y, 0f);
-
     }
 }
