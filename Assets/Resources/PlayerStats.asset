@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 383f44e450e2a4d4e8e8bb9f4553378a, type: 3}
   m_Name: PlayerStats
   m_EditorClassIdentifier: 
-  curHealth: 100
+  curHealth: 30
   maxHealth: 100
   worldPos: {x: 0, y: 0, z: 0}

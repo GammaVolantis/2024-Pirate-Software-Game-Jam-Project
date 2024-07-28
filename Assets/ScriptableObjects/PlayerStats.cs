@@ -13,14 +13,19 @@ public class PlayerStats : ScriptableObject
 
     //public List<Card> currentCards = new List<Card>();
 
-    public void newHealthValue(int oldHealth, int changeHealth)
+    public void newHealthValue(int changeHealth)
     {
-        curHealth = oldHealth + changeHealth;
-        if (curHealth <= 0) {
+        curHealth+=changeHealth;
+        if (curHealth <= 0)
+        {
             //Change Scene to Lose Scene
 
             ////Reset Player Stats
             //ResetPlayerStats();
+        }
+        else if (curHealth > maxHealth) 
+        { 
+            curHealth = maxHealth;
         }
     }
     public int GetMaxHealth() { 

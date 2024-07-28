@@ -36,12 +36,14 @@ public class PlayerTest : MonoBehaviour
         }
     }
 
-    private void HealthBarUpdate(int hC)
+    public void HealthBarUpdate(int hC)
     {
-        player.newHealthValue(player.GetCurrentHealth(), hC);
+        int oldHealth = player.curHealth;
+        player.newHealthValue(hC);
+        int newHealth = player.curHealth;
         //set new player healthbar value
         healthFill.transform.localScale = new Vector3(healthScaleFactor * player.curHealth, healthFill.transform.localScale.y, 0f);
-        float difHealth = hC;
+        float difHealth = newHealth - oldHealth;
         healthFill.transform.position = new Vector3(healthFill.transform.position.x + difHealth * healthScaleFactor / 2, healthFill.transform.position.y, 0f);
 
     }

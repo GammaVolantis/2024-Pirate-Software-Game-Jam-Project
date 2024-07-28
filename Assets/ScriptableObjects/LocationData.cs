@@ -66,6 +66,10 @@ public class LocationData : ScriptableObject
         playerVirtualLoc = pvl;
         playerRealLoc = prl;
     }
+    public void SetPlayerObject(GameObject pro) 
+    {
+        player = pro;
+    }
     public void UpdatePlayerReal(Vector3 prl) 
     {
         playerRealLoc = prl;
@@ -81,5 +85,9 @@ public class LocationData : ScriptableObject
     public Vector3 GetPlayerReal()
     {
         return playerRealLoc;
+    }
+    public GameObject GetPlayerObject() 
+    {
+        return player;
     }
 }
