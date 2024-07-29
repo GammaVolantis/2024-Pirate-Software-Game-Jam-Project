@@ -1,17 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Xml.Xsl;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "new OverworldData", menuName = "ScriptableObjects/OverworldData")]
 public class OverworldData : ScriptableObject
 {
-    //Need a container to hold the info of each object that initiates an enemy encounter.
+    //Player Overworld Position Data
+    public Vector3 playerPosition = new Vector3(-5.9f,-3.99f,0f);
 
-    //Need a container to hold all of the data about the generated map.
+    //Overworld Combat Scene Objects to load
 
-    //Need a boolean value so we can detirmine weather or not to regen the overworld.
+
+    //Combat Scene Data to Pass
+    public int minEnemies = 2;
+    public int maxEnemies = 5;
+    public string CombatSceneEnviornment = "Forest";
 
     //Methods to pass data below
+
 
 }
