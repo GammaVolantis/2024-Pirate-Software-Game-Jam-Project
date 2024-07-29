@@ -7,7 +7,7 @@ public class Director : MonoBehaviour
 {
     public Tilemap tilemap;
     public GameObject player;
-    public float waitTime = 1f;
+    public float waitTime = 5f;
     public Transform enemiesParent;
     public List<GameObject> enemies = new List<GameObject>();
     public LocationData locationData;
@@ -23,7 +23,13 @@ public class Director : MonoBehaviour
     {
         UnityEngine.Debug.Log("Director Start method called.");
         locationData = Resources.Load<LocationData>("AllLocationInformation");
+        while (tilemap == null)
+        {
+
+        }
+        
         StartCoroutine(PositionCharacterAfterGeneration());
+              
 
         foreach (Transform enemy in enemiesParent)
         {
@@ -45,6 +51,7 @@ public class Director : MonoBehaviour
         if (RoomGenerator.Instance != null)
         {
             int[,] grid = RoomGenerator.Instance.baseGrid;
+
             List<Vector3Int> floorPositions = new List<Vector3Int>();
             List<int> weights = new List<int>();
 
@@ -52,6 +59,7 @@ public class Director : MonoBehaviour
             {
                 for (int col = 0; col < grid.GetLength(1); col++)
                 {
+                    Debug.Log("LOOK HERE!!!: " + grid[row, col]);
                     if (grid[row, col] == 2)
                     {
                         Vector3Int position = new Vector3Int(col, row, 0);
