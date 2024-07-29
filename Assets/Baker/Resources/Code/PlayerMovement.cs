@@ -88,7 +88,7 @@ public class PlayerMovement : MonoBehaviour
             int row = cellPosition.y - tilemap.cellBounds.yMin;
             int col = cellPosition.x - tilemap.cellBounds.xMin;
 
-            foreach (var enemyPos in director.GetEnemyGridPositions())
+            foreach (var enemyPos in locationData.GetAllEnemyVirtual())
             {
                 if (enemyPos == cellPosition)
                 {
