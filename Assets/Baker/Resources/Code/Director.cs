@@ -10,11 +10,11 @@ public class Director : MonoBehaviour
     public float waitTime = 5f;
     public Transform enemiesParent;
     public List<GameObject> enemies = new List<GameObject>();
-    public LocationData locationData;
 
     public int minEnemies = 2;
     public int maxEnemies = 4;
 
+    private LocationData locationData;
     private Vector3Int playerGridPosition;
     private List<Vector3Int> enemyGridPositions = new List<Vector3Int>();
     public bool enemiesInitialized = false; // Flag to indicate enemy initialization

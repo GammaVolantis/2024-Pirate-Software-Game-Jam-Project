@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
@@ -70,8 +71,17 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
                     GameObject dieEnemy = locationData.GetEnemyObject(enemyLoc);
                     dieEnemy.GetComponent<EnemyHealth>().EnemyHealthUpdate(-cardStats.actionValue*10);
                     if (dieEnemy.GetComponent<EnemyHealth>().GetHealth() == 0) {
-                        Destroy(dieEnemy);
-                        locationData.RemoveEnemy(enemyLoc);
+                        if (locationData.GetNumberOfEnemies() == 1)
+                        {
+                            Destroy(dieEnemy);
+                            locationData.RemoveEnemy(enemyLoc);
+                            SceneManager.LoadScene("Win Scene");
+                        }
+                        else
+                        {
+                            Destroy(dieEnemy);
+                            locationData.RemoveEnemy(enemyLoc);
+                        }
                     }
                 }
             }

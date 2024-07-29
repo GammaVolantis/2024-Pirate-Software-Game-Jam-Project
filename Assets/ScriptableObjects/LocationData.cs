@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
+
 [CreateAssetMenu(fileName = "LocationsData", menuName = "ScriptableObjects/LocationsData")]
 public class LocationData : ScriptableObject
 {
@@ -45,6 +46,9 @@ public class LocationData : ScriptableObject
     {
         return enemies[loc];
     }
+    public int GetNumberOfEnemies() {
+        return enemies.Count;
+    }
     public List<Vector3> GetAllEnemyReal()
     { 
         return enemiesRealLoc;
@@ -58,8 +62,8 @@ public class LocationData : ScriptableObject
         enemiesRealLoc.RemoveAt(loc);
         enemiesVirtualLoc.RemoveAt(loc);
     }
-    public void ResetEnemiesLocationData() 
-    { 
+    public void ResetEnemiesLocationData()
+    {
         enemiesVirtualLoc.Clear();
         enemiesRealLoc.Clear();
         enemies.Clear();

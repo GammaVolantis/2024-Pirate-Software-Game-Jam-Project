@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); // Optionally make this persistent across scenes
+            //DontDestroyOnLoad(gameObject); // Optionally make this persistent across scenes
         }
         else
         {

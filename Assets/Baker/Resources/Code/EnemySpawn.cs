@@ -17,7 +17,7 @@ public class EnemySpawn : MonoBehaviour
     {
         UnityEngine.Debug.Log("EnemySpawn Start method called.");
         locationData = Resources.Load<LocationData>("AllLocationInformation");
-        locationData.ResetEnemiesLocationData();
+        //locationData.ResetEnemiesLocationData();
         director = FindObjectOfType<Director>();
         if (director == null)
         {
@@ -87,6 +87,7 @@ public class EnemySpawn : MonoBehaviour
             Vector3 worldPosition = tilemap.CellToWorld(gridPosition) + new Vector3(tilemap.cellSize.x / 2, tilemap.cellSize.y / 2, 0);
             UnityEngine.Debug.Log($"Instantiating enemy at: {worldPosition} (Grid Position: {gridPosition})");
             GameObject enemy = Instantiate(characterPrefab, worldPosition, Quaternion.identity, director.enemiesParent);
+            Debug.Log("EnemyObj = " + enemy);
             locationData.AddEnemyLocations(gridPosition, worldPosition, enemy);
             EnemyMovement enemyMovement = enemy.GetComponent<EnemyMovement>();
             enemyMovement.SetEnemyIndexVal(iter);
