@@ -12,7 +12,10 @@ public class LocationData : ScriptableObject
     private Vector3Int playerVirtualLoc;
     private Vector3 playerRealLoc;
     private List<GameObject> enemies;
+    private List<bool> enemiesMoveTurn;
     private GameObject player;
+    private bool playerAction = false;
+    private bool playerMove = false;
 
     //Enemies Methods
     private void OnEnable()
@@ -21,12 +24,14 @@ public class LocationData : ScriptableObject
         if (enemiesVirtualLoc == null) enemiesVirtualLoc = new List<Vector3Int>();
         if (enemiesRealLoc == null) enemiesRealLoc = new List<Vector3>();
         if (enemies == null) enemies = new List<GameObject>();
+        if (enemiesMoveTurn == null) enemiesMoveTurn = new List<bool>();
     }
     public void AddEnemyLocations(Vector3Int evl, Vector3 erl, GameObject enemy) 
     { 
         enemiesVirtualLoc.Add(evl);
         enemiesRealLoc.Add(erl);
         enemies.Add(enemy);
+        enemiesMoveTurn.Add(false);
     }
     public void AddEnemyLocationsTest(Vector3Int evl, Vector3 erl)
     {
@@ -58,6 +63,10 @@ public class LocationData : ScriptableObject
     {
         return enemies[loc];
     }
+    public List<GameObject> GetAllEnemyObjects() 
+    {
+        return enemies;
+    }
     public int GetNumberOfEnemies() {
         return enemies.Count;
     }
@@ -73,12 +82,16 @@ public class LocationData : ScriptableObject
         enemies.RemoveAt(loc);
         enemiesRealLoc.RemoveAt(loc);
         enemiesVirtualLoc.RemoveAt(loc);
+        enemiesMoveTurn.RemoveAt(loc);
     }
     public void ResetEnemiesLocationData()
     {
         enemiesVirtualLoc.Clear();
         enemiesRealLoc.Clear();
         enemies.Clear();
+        enemiesMoveTurn.Clear();
+        playerAction = false;
+        playerMove = false;
     }
 
     //Player Methods
@@ -110,5 +123,62 @@ public class LocationData : ScriptableObject
     public GameObject GetPlayerObject() 
     {
         return player;
+    }
+
+    //Player Checks for CombatTurns
+    public void SetPlayerMove() 
+    {
+        playerMove = true;
+    }
+    public bool GetPlayerMove() 
+    {
+        return playerMove;
+    }
+    public void SetPlayerAction() 
+    {
+        playerAction = true;
+    }
+    public bool GetPlayerAction() 
+    {
+        return playerAction;
+    }
+
+    //CombatTurn Controls
+    public void CheckPlayerStatus() 
+    {
+        Debug.Log($"PlayerAction = {playerAction}\nPlayerMove = {playerMove}");
+        if (playerAction && playerMove) 
+        {
+            for (int i =0; i<enemiesMoveTurn.Count; i++) 
+            {
+                enemiesMoveTurn[i] = true;
+            }
+            playerAction = false;
+            playerMove = false;
+        }
+    }
+    public void SetEnemyMoveState(int loc) 
+    {
+        enemiesMoveTurn[loc] = false;
+    }
+    public bool CheckEnemyMoveState(int loc) 
+    {
+        return enemiesMoveTurn[loc];
+    }
+    public void CheckEnemiesStatus() 
+    { 
+        bool waitingOnAnEnemy = false;
+        for (int i = 0; i < enemiesMoveTurn.Count; i++) 
+        {
+            if (enemiesMoveTurn[i]) 
+            {
+                waitingOnAnEnemy = true;
+            }    
+        }
+        if (!waitingOnAnEnemy) 
+        {
+            playerAction = false;
+            playerMove=false;
+        }
     }
 }

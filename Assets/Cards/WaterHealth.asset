@@ -17,4 +17,4 @@ MonoBehaviour:
   actionValue: 4
   actionColor: {r: 0.4830341, g: 1, b: 0.36320752, a: 1}
   range: 0
-  artwork: {fileID: 21300000, guid: e0a5c59e0d2280e45a901f79a660fa0e, type: 3}
+  artwork: {fileID: 21300000, guid: 11de2ce7558663a498bb7aba1036b090, type: 3}

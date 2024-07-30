@@ -48,7 +48,7 @@ public class PlayerMovement : MonoBehaviour
         currentCellPosition = tilemap.WorldToCell(transform.position);
         // Debug.Log("Updated Player current cell position: " + currentCellPosition);
 
-        if (Input.GetMouseButtonDown(0)) // Left mouse button
+        if (Input.GetMouseButtonDown(0) && !locationData.GetPlayerMove()) // Left mouse button
         {
             Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 mousePos2D = new Vector2(mouseWorldPos.x, mouseWorldPos.y);
@@ -74,7 +74,9 @@ public class PlayerMovement : MonoBehaviour
                 if (IsFloorTile(cellPosition) && IsWithinMovementRange(cellPosition))
                 {
                     MoveCharacterTo(cellPosition);
+                    locationData.SetPlayerMove();
                     ClearMovementRange();
+                    locationData.CheckPlayerStatus();
                 }
             }
         }

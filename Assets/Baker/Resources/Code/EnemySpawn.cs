@@ -98,9 +98,9 @@ public class EnemySpawn : MonoBehaviour
                 UnityEngine.Debug.LogError("Failed to instantiate enemy.");
                 yield break;
             }
-            else 
-            { 
-                UnityEngine.Debug.Log("Spawned enemy successfully."); 
+            else
+            {
+                UnityEngine.Debug.Log("Spawned enemy successfully.");
             }
         }
     }

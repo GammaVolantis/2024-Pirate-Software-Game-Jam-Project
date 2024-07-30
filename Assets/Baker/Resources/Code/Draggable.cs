@@ -37,7 +37,7 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
         Vector3 rayPoint = ray.GetPoint(Vector3.Distance(transform.position, Camera.main.transform.position));
         rayPoint.z= 0;
         transform.position = rayPoint;
-        Debug.Log("CardPos= " + Camera.main.WorldToScreenPoint(transform.position) + "startingPosition = " + startingPos);
+        //Debug.Log("CardPos= " + Camera.main.WorldToScreenPoint(transform.position) + "startingPosition = " + startingPos);
     }
 
     public void OnEndDrag(PointerEventData eventData)
@@ -45,16 +45,18 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
         Ray ray = Camera.main.ScreenPointToRay(eventData.position);
         Vector3 finalPos = ray.origin;
         finalPos.z = 0;
-        if (cardStats.target == "Player") 
+        if (cardStats.target == "Player" && !locationData.GetPlayerAction()) 
         {
             Vector3 playerLoc = locationData.GetPlayerReal();
             if (Mathf.Sqrt(Mathf.Pow(finalPos.x-playerLoc.x,2)+Mathf.Pow(finalPos.y - playerLoc.y, 2)) <=1) 
             {
                 Debug.Log("Used Card on Player!!!");
                 locationData.GetPlayerObject().GetComponent<HealthBar>().HealthBarUpdate(cardStats.actionValue*10);
+                playerCommittedAction();
+
             }
         }
-        else if (cardStats.target == "Enemy") 
+        else if (cardStats.target == "Enemy" && !locationData.GetPlayerAction()) 
         {
             int enemyLoc = FindClosestEnemy(finalPos);
             if (enemyLoc != -1) 
@@ -63,13 +65,14 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
                 Debug.Log("enemyPos=" + enemyPos + "   enemyIter= " + enemyLoc);
                 Vector3Int playerPos = locationData.GetPlayerVirtual();
                 Debug.Log("playerPos" + playerPos);
-                float playerToTarget = Mathf.Sqrt(Mathf.Pow(enemyPos.x - playerPos.x, 2) + Mathf.Pow(enemyPos.y - playerPos.y, 2));
+                float playerToTarget = Mathf.Floor(Mathf.Sqrt(Mathf.Pow(enemyPos.x - playerPos.x, 2) + Mathf.Pow(enemyPos.y - playerPos.y, 2)));
                 if (playerToTarget <= cardStats.range)
                 {
 
                     Debug.Log("Attacking Enemy!!! DistanceToTarget= " + playerToTarget);
                     GameObject dieEnemy = locationData.GetEnemyObject(enemyLoc);
                     dieEnemy.GetComponent<EnemyHealth>().EnemyHealthUpdate(-cardStats.actionValue*10);
+                    playerCommittedAction();
                     if (dieEnemy.GetComponent<EnemyHealth>().GetHealth() == 0) {
                         if (locationData.GetNumberOfEnemies() == 1)
                         {
@@ -125,5 +128,10 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
         {
             return -1;
         }
+    }
+    private void playerCommittedAction() 
+    {
+        locationData.SetPlayerAction();
+        locationData.CheckPlayerStatus();
     }
 }

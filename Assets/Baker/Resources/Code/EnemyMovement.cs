@@ -12,6 +12,7 @@ public class EnemyMovement : MonoBehaviour
     private Tilemap tilemap;
     private Director director;
     private LocationData locationData;
+    private PlayerStats playerStats;
     private List<GameObject> enemies;
     private bool initialized = false;
     private bool isMoving = false;
@@ -23,6 +24,7 @@ public class EnemyMovement : MonoBehaviour
     {
         // Initialize references
         locationData = Resources.Load<LocationData>("AllLocationInformation");
+        playerStats = Resources.Load<PlayerStats>("PlayerStats");
         Initialize();
     }
 
@@ -57,14 +59,31 @@ public class EnemyMovement : MonoBehaviour
             Initialize();
         }
 
-        if (timer > 0) { timer -= Time.deltaTime; }
-
-        if (Input.GetKeyDown(moveKey) && !isMoving && timer <= 0)
+        //replace the KeyDown with a value passed from the locationsDataScript
+        int iter = 0;
+        //int currentIter = 0;
+        foreach (GameObject enem in locationData.GetAllEnemyObjects()) 
+        {
+            if (this.gameObject == enem)
+            {
+                enIndex = iter;
+            }
+            iter++;
+        }
+        if (locationData.CheckEnemyMoveState(enIndex) && !isMoving)
         {
             timer = 3;
             Debug.Log("Starting enemy movement.");
             //StartCoroutine(MoveEnemiesWithDelay());
             MoveEnemy();
+            Vector3 enemyPos = locationData.GetEnemyVirtual(enIndex);
+            Vector3 playerPos = locationData.GetPlayerVirtual();
+            if (Mathf.Floor(Mathf.Sqrt(Mathf.Pow(enemyPos.x - playerPos.x, 2) + Mathf.Pow(enemyPos.y - playerPos.y, 2))) <= 1)
+            {
+                //Damage the player
+                playerStats.newHealthValue(-10);
+            }
+            locationData.SetEnemyMoveState(enIndex);
 
         }
     }
