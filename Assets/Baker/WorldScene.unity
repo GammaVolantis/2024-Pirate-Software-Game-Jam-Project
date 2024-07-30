@@ -5187,6 +5187,7 @@ MonoBehaviour:
   OverworldTilemap: {fileID: 1054273257}
   PathPrefab: {fileID: 5745343948221545976, guid: d59730f4c2721494d95852a80c6479b8, type: 3}
   PlayerPrefab: {fileID: 6815794965646810960, guid: 8ec38564d2e755e4190b688bae8ebcbd, type: 3}
+  overworldData: {fileID: 11400000, guid: b1a5ffbb5bb60004ab118235bc481a1d, type: 2}
   biomeTiles:
   - biomeType: 0
     tile: {fileID: 11400000, guid: 6402645250009e94598a8790403c47ba, type: 2}

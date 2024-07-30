@@ -9,6 +9,7 @@ public class OverworldGenerator : MonoBehaviour
     public Tilemap OverworldTilemap;
     public GameObject PathPrefab; // Prefab with LineRenderer for drawing paths
     public GameObject PlayerPrefab; // Prefab for the player
+    public OverworldData overworldData; // The overworldData scriptable object
 
     [System.Serializable]
     public class BiomeTile
@@ -59,9 +60,6 @@ public class OverworldGenerator : MonoBehaviour
     private Dictionary<Vector3Int, List<Vector3Int>> encounterConnections;
     private Dictionary<(Vector3Int, Vector3Int), GameObject> pathObjects;
 
-    // Persistent world state
-    private static WorldState worldState;
-
     private void Awake()
     {
         if (Instance == null)
@@ -79,7 +77,7 @@ public class OverworldGenerator : MonoBehaviour
 
     void Start()
     {
-        if (worldState != null)
+        if (overworldData.biomeGrid != null)
         {
             Debug.Log("Loading existing world state");
             LoadWorldState();
@@ -245,7 +243,7 @@ public class OverworldGenerator : MonoBehaviour
     {
         foreach (Vector3Int encounter in encounterPositions)
         {
-            int connections = Random.Range(1, 4); // 1 to 3 connections
+            int connections = Random.Range(1, 3); // 1 to 3 connections
             List<Vector3Int> potentialConnections = GetEncountersToRight(encounter);
 
             // Sort potential connections by distance (left to right)
@@ -282,7 +280,6 @@ public class OverworldGenerator : MonoBehaviour
 
     bool IsValidPath(Vector3Int start, Vector3Int end)
     {
-        // Add logic to validate path if needed (e.g., no overlapping paths)
         return true;
     }
 
@@ -391,21 +388,59 @@ public class OverworldGenerator : MonoBehaviour
 
     public void SaveWorldState()
     {
-        worldState = new WorldState
+        if (overworldData != null)
         {
-            biomeGrid = biomeGrid,
-            encounterPositions = new List<Vector3Int>(encounterPositions),
-            encounterConnections = new Dictionary<Vector3Int, List<Vector3Int>>(encounterConnections),
-            pathObjects = new Dictionary<(Vector3Int, Vector3Int), GameObject>(pathObjects)
-        };
+            Vector3 playerPosition = Vector3.zero;
+            PlayerMovement playerMovement = FindObjectOfType<PlayerMovement>();
+
+            if (playerMovement != null)
+            {
+                playerPosition = playerMovement.transform.position;
+            }
+            else
+            {
+                Debug.LogError("PlayerMovement object not found!");
+            }
+
+            if (biomeGrid == null)
+            {
+                Debug.LogError("biomeGrid is null!");
+            }
+            if (encounterPositions == null)
+            {
+                Debug.LogError("encounterPositions is null!");
+            }
+            if (encounterConnections == null)
+            {
+                Debug.LogError("encounterConnections is null!");
+            }
+            if (pathObjects == null)
+            {
+                Debug.LogError("pathObjects is null!");
+            }
+
+            overworldData.SetGlobalMapValues(
+                biomeGrid,
+                encounterPositions,
+                encounterConnections,
+                pathObjects,
+                playerPosition
+            );
+
+            Debug.Log("World state saved successfully.");
+        }
+        else
+        {
+            Debug.LogError("overworldData is null!");
+        }
     }
 
     void LoadWorldState()
     {
-        biomeGrid = worldState.biomeGrid;
-        encounterPositions = new List<Vector3Int>(worldState.encounterPositions);
-        encounterConnections = new Dictionary<Vector3Int, List<Vector3Int>>(worldState.encounterConnections);
-        pathObjects = new Dictionary<(Vector3Int, Vector3Int), GameObject>(worldState.pathObjects);
+        biomeGrid = overworldData.GetBiomes();
+        encounterPositions = overworldData.GetEncounterPositions();
+        encounterConnections = overworldData.GetEncounterConnections();
+        pathObjects = overworldData.GetPathObjects();
 
         // Restore the tilemap
         PlaceBiomeTiles();

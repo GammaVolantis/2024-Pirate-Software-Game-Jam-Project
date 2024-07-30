@@ -87,6 +87,11 @@ public class OverworldPlayerMovement : MonoBehaviour
         LoadEncounterScene();
     }
 
+    void SavePlayerPosition()
+    {
+        overworldGenerator.overworldData.playerPosition = transform.position;
+    }
+
     void LoadEncounterScene()
     {
         // Optionally, you can save the player's state or the current game state here
