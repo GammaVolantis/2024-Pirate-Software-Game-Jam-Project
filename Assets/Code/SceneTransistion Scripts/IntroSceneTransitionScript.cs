@@ -24,12 +24,9 @@ public class IntroSceneTransitionScript : MonoBehaviour
             cameraPosition.y -= Time.deltaTime;
             Camera.main.transform.position = cameraPosition;
         }
-        else 
+        if (Input.GetKeyDown("t"))
         {
-            if (Input.GetKeyDown("t")) 
-            {
-                SceneManager.LoadSceneAsync(nextScene);
-            }
+            SceneManager.LoadSceneAsync(nextScene);
         }
     }
 }

@@ -11,8 +11,7 @@ public class PlayerStats : ScriptableObject
 
     public int curHealth = 100;
     public int maxHealth = 100;
-    public Vector3 worldPos;
-    public   bool firstRun = true;
+    public bool firstRun = true;
     private string loseScene = "Lose Scene";
 
     //public List<Card> currentCards = new List<Card>();
@@ -22,7 +21,7 @@ public class PlayerStats : ScriptableObject
         curHealth+=changeHealth;
         if (curHealth <= 0)
         {
-            ResetPlayerStats();
+            //ResetPlayerStats();
             //PlayDeathSound
             SceneManager.LoadScene(loseScene);
         }
@@ -42,7 +41,6 @@ public class PlayerStats : ScriptableObject
     public void ResetPlayerStats()
     {
         curHealth = maxHealth;
-        worldPos = new Vector3(0f,0f,0f);
     }
     public bool GetRun() 
     { 

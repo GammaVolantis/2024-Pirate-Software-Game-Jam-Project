@@ -12,7 +12,7 @@ public class OverworldPlayer : MonoBehaviour
     void Start()
     {
         overworldData = Resources.Load<OverworldData>("OverWorldData");
-        this.gameObject.transform.position = overworldData.playerPosition;
+        this.gameObject.transform.position = overworldData.GetPlayerPosition();
         doubleSpeed = speed * 2;
         normalSpeed = speed;
     }

@@ -78,7 +78,8 @@ public class LocationData : ScriptableObject
     {
         return enemiesVirtualLoc;
     }
-    public void RemoveEnemy(int loc) { 
+    public void RemoveEnemy(int loc) 
+    { 
         enemies.RemoveAt(loc);
         enemiesRealLoc.RemoveAt(loc);
         enemiesVirtualLoc.RemoveAt(loc);

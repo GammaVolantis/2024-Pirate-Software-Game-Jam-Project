@@ -23,10 +23,12 @@ public class StartSceneTransitionScript : MonoBehaviour
             {
                 playerStats.AfterFirstRun();
                 SceneManager.LoadScene(nextSceneFirstRun);
+                Debug.Log("Running Intro");
             }
             else 
             {
                 SceneManager.LoadSceneAsync(nextSceneOtherRun);
+                Debug.Log("Not Running Intro");
             }
         }    
     }
