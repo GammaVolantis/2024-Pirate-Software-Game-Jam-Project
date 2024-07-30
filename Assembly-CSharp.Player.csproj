@@ -74,10 +74,11 @@
     <Compile Include="Assets\Baker\Resources\Code\CardScript.cs" />
     <Compile Include="Assets\Baker\Resources\Code\OverworldGenerator.cs" />
     <Compile Include="Assets\Code\HealthBarFollow.cs" />
+    <Compile Include="Assets\Code\EnemyHealth.cs" />
     <Compile Include="Assets\ScriptableObjects\OverworldData.cs" />
     <Compile Include="Assets\Baker\Resources\Code\PlayerMovement.cs" />
     <Compile Include="Assets\Baker\Resources\Code\PlayerFollow.cs" />
-    <Compile Include="Assets\EnemyHealth.cs" />
+    <Compile Include="Assets\Code\RefreshCombatScene.cs" />
     <Compile Include="Assets\Code\SceneTransistion Scripts\IntroSceneTransitionScript.cs" />
     <Compile Include="Assets\Baker\Resources\Code\Director.cs" />
     <Compile Include="Assets\Code\EndTurnButton.cs" />
@@ -95,7 +96,6 @@
     <Compile Include="Assets\Code\PlayerTest.cs" />
     <Compile Include="Assets\Baker\Resources\Code\OverworldPlayerMovement.cs" />
     <Compile Include="Assets\Baker\Resources\Code\MouseControl.cs" />
-    <Compile Include="Assets\RefreshCombatScene.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
