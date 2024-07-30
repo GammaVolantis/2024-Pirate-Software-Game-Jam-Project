@@ -80,6 +80,7 @@
     <Compile Include="Assets\EnemyHealth.cs" />
     <Compile Include="Assets\Code\SceneTransistion Scripts\IntroSceneTransitionScript.cs" />
     <Compile Include="Assets\Baker\Resources\Code\Director.cs" />
+    <Compile Include="Assets\Code\EndTurnButton.cs" />
     <Compile Include="Assets\Code\OverworldPlayer.cs" />
     <Compile Include="Assets\Baker\Resources\Code\RoomGenerator.cs" />
     <Compile Include="Assets\Baker\Resources\Code\Draggable.cs" />
