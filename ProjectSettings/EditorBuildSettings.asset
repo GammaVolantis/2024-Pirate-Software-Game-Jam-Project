@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WorkingCAPrototype.unity
     guid: b41e4ba9e52fdf04590b2682ef48525e
+  - enabled: 1
+    path: Assets/Scenes/Black Reset Scene.unity
+    guid: 852012523cb1fe043a56ab7fde00977f
+  - enabled: 1
+    path: Assets/Scenes/WorkingCAFinal.unity
+    guid: f710f32a692ae31479fb7d5c82b565e6
   m_configObjects: {}

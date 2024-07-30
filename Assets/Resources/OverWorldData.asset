@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17212dadfb7f8c94b828fe76f4232d6d, type: 3}
   m_Name: OverWorldData
   m_EditorClassIdentifier: 
+  playerPosition: {x: -5.9, y: -3.99, z: 0}

@@ -15,11 +15,23 @@ public class LocationData : ScriptableObject
     private GameObject player;
 
     //Enemies Methods
+    private void OnEnable()
+    {
+        // Initialize lists if they are null
+        if (enemiesVirtualLoc == null) enemiesVirtualLoc = new List<Vector3Int>();
+        if (enemiesRealLoc == null) enemiesRealLoc = new List<Vector3>();
+        if (enemies == null) enemies = new List<GameObject>();
+    }
     public void AddEnemyLocations(Vector3Int evl, Vector3 erl, GameObject enemy) 
     { 
         enemiesVirtualLoc.Add(evl);
         enemiesRealLoc.Add(erl);
         enemies.Add(enemy);
+    }
+    public void AddEnemyLocationsTest(Vector3Int evl, Vector3 erl)
+    {
+        enemiesVirtualLoc.Add(evl);
+        enemiesRealLoc.Add(erl);
     }
     public void UpdateEnemyLocation(Vector3Int evl, Vector3 erl, int loc) 
     {

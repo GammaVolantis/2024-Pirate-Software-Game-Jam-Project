@@ -3,6 +3,7 @@ using UnityEngine.Tilemaps;
 using System.Collections;
 using System.Collections.Generic;
 using System;
+using UnityEngine.SceneManagement;
 
 public class EnemySpawn : MonoBehaviour
 {
@@ -87,8 +88,8 @@ public class EnemySpawn : MonoBehaviour
             Vector3 worldPosition = tilemap.CellToWorld(gridPosition) + new Vector3(tilemap.cellSize.x / 2, tilemap.cellSize.y / 2, 0);
             UnityEngine.Debug.Log($"Instantiating enemy at: {worldPosition} (Grid Position: {gridPosition})");
             GameObject enemy = Instantiate(characterPrefab, worldPosition, Quaternion.identity, director.enemiesParent);
-            Debug.Log("EnemyObj = " + enemy);
-            locationData.AddEnemyLocations(gridPosition, worldPosition, enemy);
+            Debug.Log("EnemyObj = " + enemy.transform.position);
+            locationData.AddEnemyLocations(gridPosition, worldPosition,enemy);
             EnemyMovement enemyMovement = enemy.GetComponent<EnemyMovement>();
             enemyMovement.SetEnemyIndexVal(iter);
             iter += 1;
