@@ -81,6 +81,16 @@ public class RoomGenerator : MonoBehaviour
 
     void Start()
     {
+        // Retrieve the environment type from PlayerPrefs
+        if (PlayerPrefs.HasKey("EnvironmentType"))
+        {
+            selectedEnvironment = (EnvironmentType)PlayerPrefs.GetInt("EnvironmentType");
+        }
+        else
+        {
+            selectedEnvironment = EnvironmentType.Dungeon; // Default to Dungeon if not set
+        }
+
         SetEnvironment(selectedEnvironment); // Sets the environment based on the selected type (see SetEnvironment below)
         GenerateRoom(); // The main room generation function
     }

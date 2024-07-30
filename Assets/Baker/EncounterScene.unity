@@ -1256,7 +1256,6 @@ MonoBehaviour:
   enemies:
   - {fileID: 6844069688892414824, guid: ee55a3d39b0ff3647aef40930a60478b, type: 3}
   - {fileID: 5537149812348610092, guid: 4ec25b4e1b438ac40b4653f5623bfb99, type: 3}
-  locationData: {fileID: 0}
   minEnemies: 2
   maxEnemies: 4
   enemiesInitialized: 0
@@ -1596,7 +1595,7 @@ MonoBehaviour:
         tile: {fileID: 0}
         weight: 0
       floorTiles: []
-    useGameOfLife: 1
+    useGameOfLife: 0
   roomWidth: 16
   roomHeight: 9
   selectedEnvironment: 2
