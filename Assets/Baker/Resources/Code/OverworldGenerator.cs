@@ -440,7 +440,9 @@ public class OverworldGenerator : MonoBehaviour
         }
 
         // Restore the paths
-        foreach (var path in pathObjects.Keys)
+
+        Dictionary<(Vector3Int, Vector3Int), GameObject> tempObjects = pathObjects;
+        foreach (var path in tempObjects.Keys)
         {
             DrawPath(path.Item1, path.Item2);
         }
