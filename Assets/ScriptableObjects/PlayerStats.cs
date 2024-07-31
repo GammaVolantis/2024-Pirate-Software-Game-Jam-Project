@@ -15,7 +15,7 @@ public class PlayerStats : ScriptableObject
     private string loseScene = "Lose Scene";
 
     //public List<Card> currentCards = new List<Card>();
-
+    private void OnEnable() => hideFlags = HideFlags.DontUnloadUnusedAsset;
     public void newHealthValue(int changeHealth)
     {
         curHealth+=changeHealth;

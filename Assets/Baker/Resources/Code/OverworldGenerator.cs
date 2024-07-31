@@ -22,14 +22,14 @@ public class OverworldGenerator : MonoBehaviour
     {
         Plains,
         Forest,
-        Mountain
+        //Mountain
     }
 
     public enum EncounterType
     {
         PlainsEncounter,
         ForestEncounter,
-        MountainEncounter
+        //MountainEncounter
     }
 
     [System.Serializable]
@@ -81,6 +81,22 @@ public class OverworldGenerator : MonoBehaviour
         {
             Debug.Log("Loading existing world state");
             LoadWorldState();
+
+            // Spawn player at the furthest left encounter location
+            Vector3 playerStartPos = overworldData.GetPlayerPosition();
+            Debug.Log($"Spawning player at position: {playerStartPos}");
+            GameObject player = Instantiate(PlayerPrefab, playerStartPos, Quaternion.identity);
+            if (player == null)
+            {
+                Debug.LogError("Failed to instantiate player!");
+            }
+
+            // Ensure player is rendered on top
+            SpriteRenderer playerSpriteRenderer = player.GetComponent<SpriteRenderer>();
+            if (playerSpriteRenderer != null)
+            {
+                playerSpriteRenderer.sortingOrder = 10; // Higher sorting order than the lines
+            }
         }
         else
         {
@@ -129,7 +145,7 @@ public class OverworldGenerator : MonoBehaviour
 
         PlaceEncounterTiles(BiomeType.Plains, EncounterType.PlainsEncounter, 10);
         PlaceEncounterTiles(BiomeType.Forest, EncounterType.ForestEncounter, 10);
-        PlaceEncounterTiles(BiomeType.Mountain, EncounterType.MountainEncounter, 10);
+        //PlaceEncounterTiles(BiomeType.Mountain, EncounterType.MountainEncounter, 10);
 
         CreatePathways();
 
@@ -153,14 +169,14 @@ public class OverworldGenerator : MonoBehaviour
                 {
                     biomeGrid[y, x] = BiomeType.Plains;
                 }
-                else if (sample < 0.5f)
+                else //if (sample < 0.5f)
                 {
                     biomeGrid[y, x] = BiomeType.Forest;
                 }
-                else
-                {
-                    biomeGrid[y, x] = BiomeType.Mountain;
-                }
+                //else
+                //{
+                //    biomeGrid[y, x] = BiomeType.Mountain;
+                //}
             }
         }
     }
@@ -305,7 +321,7 @@ public class OverworldGenerator : MonoBehaviour
 
         // Store the path object for later removal
         pathObjects[(start, end)] = pathObject;
-        pathObjects[(end, start)] = pathObject; // Ensure we can find it regardless of direction
+        //pathObjects[(end, start)] = pathObject; // Ensure we can find it regardless of direction
     }
 
     public void DestroyPath(Vector3Int start, Vector3Int end)
@@ -314,7 +330,7 @@ public class OverworldGenerator : MonoBehaviour
         {
             Destroy(pathObjects[(start, end)]);
             pathObjects.Remove((start, end));
-            pathObjects.Remove((end, start));
+            //pathObjects.Remove((end, start));
         }
         else
         {
@@ -441,8 +457,9 @@ public class OverworldGenerator : MonoBehaviour
 
         // Restore the paths
 
-        Dictionary<(Vector3Int, Vector3Int), GameObject> tempObjects = pathObjects;
-        foreach (var path in tempObjects.Keys)
+        Dictionary<(Vector3Int, Vector3Int), GameObject> tempObjects = overworldData.GetPathObjects(); ;
+        var keysCopy = new List<(Vector3Int, Vector3Int)>(tempObjects.Keys);
+        foreach (var path in keysCopy)
         {
             DrawPath(path.Item1, path.Item2);
         }

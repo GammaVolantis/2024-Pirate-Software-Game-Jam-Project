@@ -106,8 +106,8 @@ public class OverworldPlayerMovement : MonoBehaviour
                 return EnvironmentType.Dungeon;
             case OverworldGenerator.EncounterType.ForestEncounter:
                 return EnvironmentType.Forest;
-            case OverworldGenerator.EncounterType.MountainEncounter:
-                return EnvironmentType.Cave;
+            //case OverworldGenerator.EncounterType.MountainEncounter:
+            //    return EnvironmentType.Cave;
             default:
                 return EnvironmentType.Dungeon; // Default to Dungeon if not matched
         }

@@ -9,6 +9,7 @@ public class OverworldPlayer : MonoBehaviour
     private float doubleSpeed;
     private float normalSpeed;
     // Start is called before the first frame update
+    private void OnEnable() => hideFlags = HideFlags.DontUnloadUnusedAsset;
     void Start()
     {
         overworldData = Resources.Load<OverworldData>("OverWorldData");

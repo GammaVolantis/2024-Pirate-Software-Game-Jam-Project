@@ -7,16 +7,36 @@
       "RelativeMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|solutionrelative:assets\\baker\\resources\\code\\overworldgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\assets\\baker\\resources\\code\\draggable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|solutionrelative:assets\\baker\\resources\\code\\draggable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\assets\\baker\\resources\\code\\playerspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|solutionrelative:assets\\baker\\resources\\code\\playerspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\assets\\scriptableobjects\\locationdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|solutionrelative:assets\\scriptableobjects\\locationdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|c:\\users\\stato\\unity\\2024-pirate-software-game-jam-project\\assets\\scriptableobjects\\overworlddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|solutionrelative:assets\\scriptableobjects\\overworlddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\assets\\baker\\resources\\code\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|solutionrelative:assets\\baker\\resources\\code\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\assets\\scriptableobjects\\playerstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|solutionrelative:assets\\scriptableobjects\\playerstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\assets\\code\\overworldplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\overworldplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\assets\\baker\\resources\\code\\overworldplayermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|solutionrelative:assets\\baker\\resources\\code\\overworldplayermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\assets\\baker\\resources\\code\\draggable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|solutionrelative:assets\\baker\\resources\\code\\draggable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\assets\\code\\endturnbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,28 +47,8 @@
       "RelativeMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\scenetransistion scripts\\startscenetransitionscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\assets\\scriptableobjects\\locationdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|solutionrelative:assets\\scriptableobjects\\locationdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\assets\\baker\\resources\\code\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|solutionrelative:assets\\baker\\resources\\code\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\assets\\code\\overworldplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\overworldplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\assets\\baker\\resources\\code\\roomgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|solutionrelative:assets\\baker\\resources\\code\\roomgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\assets\\scriptableobjects\\playerstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|solutionrelative:assets\\scriptableobjects\\playerstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\assets\\baker\\resources\\code\\playerspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|solutionrelative:assets\\baker\\resources\\code\\playerspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{66DC2AE3-FBC9-6409-F23B-6E023B74B136}|Assembly-CSharp.csproj|C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\assets\\code\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,35 +62,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 193,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "OverworldPlayerMovement.cs",
               "DocumentMoniker": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Baker\\Resources\\Code\\OverworldPlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Baker\\Resources\\Code\\OverworldPlayerMovement.cs",
               "ToolTip": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Baker\\Resources\\Code\\OverworldPlayerMovement.cs",
               "RelativeToolTip": "Assets\\Baker\\Resources\\Code\\OverworldPlayerMovement.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAowFsAAABOAAAA",
+              "ViewState": "AQIAADkAAAAAAAAAAAAowG0AAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T23:43:16.207Z"
+              "WhenOpened": "2024-07-30T23:43:16.207Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EndTurnButton.cs",
-              "DocumentMoniker": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Code\\EndTurnButton.cs",
-              "RelativeDocumentMoniker": "Assets\\Code\\EndTurnButton.cs",
-              "ToolTip": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Code\\EndTurnButton.cs",
-              "RelativeToolTip": "Assets\\Code\\EndTurnButton.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T22:53:02.145Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "StartSceneTransitionScript.cs",
               "DocumentMoniker": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Code\\SceneTransistion Scripts\\StartSceneTransitionScript.cs",
               "RelativeDocumentMoniker": "Assets\\Code\\SceneTransistion Scripts\\StartSceneTransitionScript.cs",
@@ -102,7 +91,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "Draggable.cs",
               "DocumentMoniker": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Baker\\Resources\\Code\\Draggable.cs",
               "RelativeDocumentMoniker": "Assets\\Baker\\Resources\\Code\\Draggable.cs",
@@ -120,10 +109,22 @@
               "RelativeDocumentMoniker": "Assets\\Baker\\Resources\\Code\\OverworldGenerator.cs",
               "ToolTip": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Baker\\Resources\\Code\\OverworldGenerator.cs",
               "RelativeToolTip": "Assets\\Baker\\Resources\\Code\\OverworldGenerator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAFAAAA",
+              "ViewState": "AQIAAJsAAAAAAAAAAAAjwKYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-30T05:57:32.278Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EndTurnButton.cs",
+              "DocumentMoniker": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Code\\EndTurnButton.cs",
+              "RelativeDocumentMoniker": "Assets\\Code\\EndTurnButton.cs",
+              "ToolTip": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Code\\EndTurnButton.cs",
+              "RelativeToolTip": "Assets\\Code\\EndTurnButton.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T22:53:02.145Z"
             },
             {
               "$type": "Document",
@@ -141,23 +142,24 @@
         },
         {
           "DockedWidth": 207,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "LocationData.cs",
               "DocumentMoniker": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\ScriptableObjects\\LocationData.cs",
               "RelativeDocumentMoniker": "Assets\\ScriptableObjects\\LocationData.cs",
               "ToolTip": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\ScriptableObjects\\LocationData.cs",
               "RelativeToolTip": "Assets\\ScriptableObjects\\LocationData.cs",
-              "ViewState": "AQIAAIYAAAAAAAAAAAAmwAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T22:52:22.892Z"
+              "WhenOpened": "2024-07-30T22:52:22.892Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 1,
               "Title": "PlayerSpawn.cs",
               "DocumentMoniker": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Baker\\Resources\\Code\\PlayerSpawn.cs",
               "RelativeDocumentMoniker": "Assets\\Baker\\Resources\\Code\\PlayerSpawn.cs",
@@ -165,24 +167,25 @@
               "RelativeToolTip": "Assets\\Baker\\Resources\\Code\\PlayerSpawn.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T10:43:00.439Z"
+              "WhenOpened": "2024-07-29T10:43:00.439Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "OverworldData.cs",
               "DocumentMoniker": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\ScriptableObjects\\OverworldData.cs",
               "RelativeDocumentMoniker": "Assets\\ScriptableObjects\\OverworldData.cs",
               "ToolTip": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\ScriptableObjects\\OverworldData.cs",
               "RelativeToolTip": "Assets\\ScriptableObjects\\OverworldData.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAUwDcAAAAFAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBgAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-29T08:24:12.373Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "PlayerMovement.cs",
               "DocumentMoniker": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Baker\\Resources\\Code\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Baker\\Resources\\Code\\PlayerMovement.cs",
@@ -190,35 +193,38 @@
               "RelativeToolTip": "Assets\\Baker\\Resources\\Code\\PlayerMovement.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T11:08:20.957Z"
+              "WhenOpened": "2024-07-29T11:08:20.957Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 5,
               "Title": "PlayerStats.cs",
               "DocumentMoniker": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\ScriptableObjects\\PlayerStats.cs",
               "RelativeDocumentMoniker": "Assets\\ScriptableObjects\\PlayerStats.cs",
               "ToolTip": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\ScriptableObjects\\PlayerStats.cs",
               "RelativeToolTip": "Assets\\ScriptableObjects\\PlayerStats.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAADwvy4AAAAYAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T09:34:27.828Z"
+              "WhenOpened": "2024-07-29T09:34:27.828Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "OverworldPlayer.cs",
               "DocumentMoniker": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Code\\OverworldPlayer.cs",
               "RelativeDocumentMoniker": "Assets\\Code\\OverworldPlayer.cs",
               "ToolTip": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Code\\OverworldPlayer.cs",
               "RelativeToolTip": "Assets\\Code\\OverworldPlayer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABOAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T20:55:37.688Z"
+              "WhenOpened": "2024-07-29T20:55:37.688Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "RoomGenerator.cs",
               "DocumentMoniker": "C:\\Users\\stato\\Unity\\2024-Pirate-Software-Game-Jam-Project\\Assets\\Baker\\Resources\\Code\\RoomGenerator.cs",
               "RelativeDocumentMoniker": "Assets\\Baker\\Resources\\Code\\RoomGenerator.cs",

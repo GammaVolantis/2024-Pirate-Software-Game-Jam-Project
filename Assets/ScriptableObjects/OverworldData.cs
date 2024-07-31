@@ -22,9 +22,9 @@ public class OverworldData : ScriptableObject
 
     //Player Overworld Position Data
     //private Vector3 playerPosition = new Vector3(-5.9f, -3.99f, 0f);
-
     public void OnEnable()
     {
+        hideFlags = HideFlags.DontUnloadUnusedAsset;
         //Don't know if I need to put a check for the biomeGrid in here
         if (encounterConnections == null) encounterConnections = new Dictionary<Vector3Int, List<Vector3Int>>();
         if (pathObjects == null) pathObjects = new Dictionary<(Vector3Int, Vector3Int), GameObject>();
