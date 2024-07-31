@@ -9,6 +9,7 @@ public class OverworldPlayerMovement : MonoBehaviour
     private Tilemap overworldTilemap;
     private Vector3Int currentPosition;
     private GameObject particleEffect;
+    private OverworldData overworldData;
 
     void Start()
     {
@@ -72,7 +73,7 @@ public class OverworldPlayerMovement : MonoBehaviour
         // Move the player to the new position
         currentPosition = newPosition;
         transform.position = overworldTilemap.GetCellCenterWorld(currentPosition);
-
+        overworldData.SetPlayerPosition(newPosition);
         // Determine the encounter type based on the position
         OverworldGenerator.EncounterType encounterType = overworldGenerator.GetEncounterTypeAtPosition(newPosition);
 
@@ -89,7 +90,7 @@ public class OverworldPlayerMovement : MonoBehaviour
 
     void SavePlayerPosition()
     {
-        overworldGenerator.overworldData.playerPosition = transform.position;
+        overworldGenerator.overworldData.playerPosition = currentPosition;
     }
 
     void LoadEncounterScene()

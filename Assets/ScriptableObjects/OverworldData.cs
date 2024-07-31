@@ -17,7 +17,7 @@ public class OverworldData : ScriptableObject
     public List<Vector3Int> encounterPositions = new List<Vector3Int>();
     public Dictionary<Vector3Int, List<Vector3Int>> encounterConnections = new Dictionary<Vector3Int, List<Vector3Int>>();
     public Dictionary<(Vector3Int, Vector3Int), GameObject> pathObjects = new Dictionary<(Vector3Int, Vector3Int), GameObject>();
-    public Vector3 playerPosition = new Vector3(-5.9f, -3.99f, 0f);
+    public Vector3Int playerPosition;
     public bool hasData = false;
 
     //Player Overworld Position Data
@@ -32,7 +32,7 @@ public class OverworldData : ScriptableObject
     }
 
     //Overworld Combat Scene Objects to load
-    public void SetGlobalMapValues(OverworldGenerator.BiomeType[,] biomes, List<Vector3Int> eps, Dictionary<Vector3Int, List<Vector3Int>> ecs, Dictionary<(Vector3Int, Vector3Int), GameObject> pos, Vector3 pp)
+    public void SetGlobalMapValues(OverworldGenerator.BiomeType[,] biomes, List<Vector3Int> eps, Dictionary<Vector3Int, List<Vector3Int>> ecs, Dictionary<(Vector3Int, Vector3Int), GameObject> pos, Vector3Int pp)
     {
         biomeGrid = biomes;
         encounterPositions = new List<Vector3Int>(eps);
@@ -58,11 +58,11 @@ public class OverworldData : ScriptableObject
     {
         return pathObjects;
     }
-    public void SetPlayerPosition(Vector3 pp) 
+    public void SetPlayerPosition(Vector3Int pp) 
     { 
         playerPosition = pp; 
     }
-    public Vector3 GetPlayerPosition()
+    public Vector3Int GetPlayerPosition()
     {
         return playerPosition;
     }
