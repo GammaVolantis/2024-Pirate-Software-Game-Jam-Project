@@ -18,6 +18,7 @@ public class OverworldData : ScriptableObject
     public Dictionary<Vector3Int, List<Vector3Int>> encounterConnections = new Dictionary<Vector3Int, List<Vector3Int>>();
     public Dictionary<(Vector3Int, Vector3Int), GameObject> pathObjects = new Dictionary<(Vector3Int, Vector3Int), GameObject>();
     public Vector3 playerPosition = new Vector3(-5.9f, -3.99f, 0f);
+    public bool hasData = false;
 
     //Player Overworld Position Data
     //private Vector3 playerPosition = new Vector3(-5.9f, -3.99f, 0f);
@@ -38,6 +39,7 @@ public class OverworldData : ScriptableObject
         encounterConnections = new Dictionary<Vector3Int, List<Vector3Int>>(ecs);
         pathObjects = new Dictionary<(Vector3Int, Vector3Int), GameObject>(pos);
         playerPosition = pp;
+        hasData = true;
     }
 
     public OverworldGenerator.BiomeType[,] GetBiomes()
@@ -56,8 +58,19 @@ public class OverworldData : ScriptableObject
     {
         return pathObjects;
     }
+    public void SetPlayerPosition(Vector3 pp) 
+    { 
+        playerPosition = pp; 
+    }
     public Vector3 GetPlayerPosition()
     {
         return playerPosition;
+    }
+    public bool GetHasData() 
+    { 
+        return hasData;
+    }
+    public void ResetWorldData() {
+        hasData = false;
     }
 }
