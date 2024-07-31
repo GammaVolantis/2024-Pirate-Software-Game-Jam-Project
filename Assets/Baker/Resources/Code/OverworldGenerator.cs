@@ -368,6 +368,16 @@ public class OverworldGenerator : MonoBehaviour
         encounterPositions.Sort((a, b) => a.x.CompareTo(b.x));
         return encounterPositions[0];
     }
+    public Vector3Int GetFurthestRightEncounterPosition()
+    {
+        if (encounterPositions == null || encounterPositions.Count == 0)
+        {
+            Debug.LogError("Encounter positions list is null or empty");
+            return Vector3Int.zero;
+        }
+        encounterPositions.Sort((a, b) => a.x.CompareTo(b.x));
+        return encounterPositions[encounterPositions.Count];
+    }
 
     public bool CanMoveTo(Vector3Int from, Vector3Int to)
     {

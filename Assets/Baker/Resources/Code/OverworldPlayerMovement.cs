@@ -30,8 +30,16 @@ public class OverworldPlayerMovement : MonoBehaviour
         }
 
         // Initialize player at the first encounter location on the left
-        currentPosition = overworldGenerator.GetFurthestLeftEncounterPosition();
-        transform.position = overworldTilemap.GetCellCenterWorld(currentPosition);
+        if (overworldData.GetPlayerPosition() != Vector3Int.zero)
+        {
+            currentPosition = overworldData.GetPlayerPosition();
+        }
+        else
+        {
+            currentPosition = overworldGenerator.GetFurthestLeftEncounterPosition();
+            overworldData.furthestInstance = overworldGenerator.GetFurthestRightEncounterPosition();
+        }
+            transform.position = overworldTilemap.GetCellCenterWorld(currentPosition);
         Debug.Log($"Player initialized at position: {currentPosition}");
 
         // Ensure player is rendered on top
@@ -64,7 +72,6 @@ public class OverworldPlayerMovement : MonoBehaviour
     void MovePlayer(Vector3Int newPosition)
     {
         Debug.Log($"Moving player from {currentPosition} to {newPosition}");
-
         // Destroy the line behind the player
         overworldGenerator.DestroyPath(currentPosition, newPosition);
 

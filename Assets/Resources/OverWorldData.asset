@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 32
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -12,4 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17212dadfb7f8c94b828fe76f4232d6d, type: 3}
   m_Name: OverWorldData
   m_EditorClassIdentifier: 
-  playerPosition: {x: -5.9, y: -3.99, z: 0}
+  encounterPositions:
+  - {x: 21, y: -2, z: 0}
+  - {x: -34, y: 8, z: 0}
+  - {x: -13, y: -5, z: 0}
+  - {x: 12, y: 3, z: 0}
+  - {x: -39, y: -12, z: 0}
+  - {x: -2, y: 10, z: 0}
+  - {x: -45, y: -2, z: 0}
+  - {x: -5, y: -6, z: 0}
+  - {x: 17, y: -7, z: 0}
+  - {x: 10, y: -2, z: 0}
+  - {x: 25, y: -8, z: 0}
+  - {x: 44, y: 9, z: 0}
+  - {x: 45, y: -3, z: 0}
+  - {x: -40, y: 9, z: 0}
+  - {x: 3, y: -7, z: 0}
+  - {x: -26, y: -8, z: 0}
+  - {x: -31, y: -6, z: 0}
+  - {x: 33, y: -10, z: 0}
+  - {x: 0, y: -3, z: 0}
+  - {x: -44, y: 6, z: 0}
+  playerPosition: {x: -44, y: 6, z: 0}
+  furthestInstance: {x: 0, y: 0, z: 0}
+  hasData: 1

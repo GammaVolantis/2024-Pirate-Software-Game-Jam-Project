@@ -18,6 +18,7 @@ public class OverworldData : ScriptableObject
     public Dictionary<Vector3Int, List<Vector3Int>> encounterConnections = new Dictionary<Vector3Int, List<Vector3Int>>();
     public Dictionary<(Vector3Int, Vector3Int), GameObject> pathObjects = new Dictionary<(Vector3Int, Vector3Int), GameObject>();
     public Vector3Int playerPosition;
+    public Vector3Int furthestInstance;
     public bool hasData = false;
 
     //Player Overworld Position Data

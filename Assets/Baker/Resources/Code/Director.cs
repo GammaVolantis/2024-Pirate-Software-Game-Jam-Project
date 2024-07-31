@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class Director : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class Director : MonoBehaviour
     public float waitTime = 5f;
     public Transform enemiesParent;
     public List<GameObject> enemies = new List<GameObject>();
+    public OverworldData overworldData;
 
     public int minEnemies = 2;
     public int maxEnemies = 4;
@@ -21,8 +23,13 @@ public class Director : MonoBehaviour
 
     void Start()
     {
+        overworldData = Resources.Load<OverworldData>("OverworldData");
         UnityEngine.Debug.Log("Director Start method called.");
         locationData = Resources.Load<LocationData>("AllLocationInformation");
+        if (overworldData.furthestInstance == overworldData.playerPosition) 
+        {
+            SceneManager.LoadScene("Win Scene");
+        }
         while (tilemap == null)
         {
 
