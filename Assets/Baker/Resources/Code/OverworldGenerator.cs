@@ -22,16 +22,14 @@ public class OverworldGenerator : MonoBehaviour
     {
         Plains,
         Forest,
-        Mountain,
-        Volcano
+        Mountain
     }
 
     public enum EncounterType
     {
         PlainsEncounter,
         ForestEncounter,
-        MountainEncounter,
-        VolcanoEncounter
+        MountainEncounter
     }
 
     [System.Serializable]
@@ -132,7 +130,6 @@ public class OverworldGenerator : MonoBehaviour
         PlaceEncounterTiles(BiomeType.Plains, EncounterType.PlainsEncounter, 10);
         PlaceEncounterTiles(BiomeType.Forest, EncounterType.ForestEncounter, 10);
         PlaceEncounterTiles(BiomeType.Mountain, EncounterType.MountainEncounter, 10);
-        PlaceEncounterTiles(BiomeType.Volcano, EncounterType.VolcanoEncounter, 10);
 
         CreatePathways();
 
@@ -160,13 +157,9 @@ public class OverworldGenerator : MonoBehaviour
                 {
                     biomeGrid[y, x] = BiomeType.Forest;
                 }
-                else if (sample < 0.75f)
-                {
-                    biomeGrid[y, x] = BiomeType.Mountain;
-                }
                 else
                 {
-                    biomeGrid[y, x] = BiomeType.Volcano;
+                    biomeGrid[y, x] = BiomeType.Mountain;
                 }
             }
         }
