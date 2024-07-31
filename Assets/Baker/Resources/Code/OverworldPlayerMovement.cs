@@ -13,6 +13,7 @@ public class OverworldPlayerMovement : MonoBehaviour
 
     void Start()
     {
+        overworldData = Resources.Load<OverworldData>("OverWorldData");
         // Find the OverworldGenerator and Tilemap in the scene
         overworldGenerator = FindObjectOfType<OverworldGenerator>();
         if (overworldGenerator == null)

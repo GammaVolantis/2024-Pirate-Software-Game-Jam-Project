@@ -29,6 +29,7 @@ public class OverworldData : ScriptableObject
         if (encounterConnections == null) encounterConnections = new Dictionary<Vector3Int, List<Vector3Int>>();
         if (pathObjects == null) pathObjects = new Dictionary<(Vector3Int, Vector3Int), GameObject>();
         if (encounterPositions == null) encounterPositions = new List<Vector3Int>();
+        if (playerPosition == null) playerPosition = new Vector3Int();
     }
 
     //Overworld Combat Scene Objects to load

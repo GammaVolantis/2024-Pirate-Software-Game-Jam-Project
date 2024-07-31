@@ -399,12 +399,12 @@ public class OverworldGenerator : MonoBehaviour
 
     public void SaveWorldState()
     {
-        Vector3 playerPosition = Vector3.zero;
+        Vector3Int playerPosition = Vector3Int.zero;
         PlayerMovement playerMovement = FindObjectOfType<PlayerMovement>();
 
         if (playerMovement != null)
         {
-            playerPosition = playerMovement.transform.position;
+            playerPosition = OverworldTilemap.WorldToCell(playerMovement.transform.position);
         }
         else
         {
