@@ -194,7 +194,7 @@ public class OverworldGenerator : MonoBehaviour
                     Debug.LogError($"Tile is null for biome at position {position} with biome type {biomeGrid[y, x]}");
                 }
                 OverworldTilemap.SetTile(position, tile);
-                Debug.Log($"Setting tile at {position} with tile for biome {biomeGrid[y, x]}");
+                //Debug.Log($"Setting tile at {position} with tile for biome {biomeGrid[y, x]}");
             }
         }
     }
