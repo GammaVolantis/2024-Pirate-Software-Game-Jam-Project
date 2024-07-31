@@ -78,7 +78,7 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
                         {
                             Destroy(dieEnemy);
                             locationData.RemoveEnemy(enemyLoc);
-                            SceneManager.LoadScene("Win Scene");
+                            SceneManager.LoadScene("WorldScene");
                         }
                         else
                         {

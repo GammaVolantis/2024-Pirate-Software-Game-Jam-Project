@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WorkingCAFinal.unity
     guid: f710f32a692ae31479fb7d5c82b565e6
+  - enabled: 1
+    path: Assets/Baker/WorldScene.unity
+    guid: e8d43c1b86c2fa945b103118317bef62
   m_configObjects: {}
