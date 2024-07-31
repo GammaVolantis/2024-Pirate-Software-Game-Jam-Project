@@ -11,12 +11,14 @@ public class StartSceneTransitionScript : MonoBehaviour
     
     private PlayerStats playerStats;
     private OverworldData overworldData;
+    private LocationData locationData;
 
 
     private void Start()
     {
         playerStats = Resources.Load<PlayerStats>("PlayerStats");
         overworldData = Resources.Load<OverworldData>("OverWorldData");
+        locationData = Resources.Load<LocationData>("AllLocationInformation");
     }
     // Update is called once per frame
     void Update()
@@ -30,6 +32,7 @@ public class StartSceneTransitionScript : MonoBehaviour
                 Debug.Log("Running Intro");
                 playerStats.ResetPlayerStats();
                 overworldData.ResetWorldData();
+                locationData.ResetEnemiesLocationData();
             }
             else 
             {
@@ -37,6 +40,7 @@ public class StartSceneTransitionScript : MonoBehaviour
                 Debug.Log("Not Running Intro");
                 playerStats.ResetPlayerStats();
                 overworldData.ResetWorldData();
+                locationData.ResetEnemiesLocationData();
             }
 
         }    
