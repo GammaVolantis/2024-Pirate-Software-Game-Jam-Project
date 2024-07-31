@@ -4,7 +4,7 @@ using UnityEngine.Tilemaps;
 
 public class OverworldGenerator : MonoBehaviour
 {
-    public static OverworldGenerator Instance { get; private set; }
+    //public static OverworldGenerator Instance { get; private set; }
 
     public Tilemap OverworldTilemap;
     public GameObject PathPrefab; // Prefab with LineRenderer for drawing paths
@@ -60,24 +60,26 @@ public class OverworldGenerator : MonoBehaviour
     private Dictionary<Vector3Int, List<Vector3Int>> encounterConnections;
     private Dictionary<(Vector3Int, Vector3Int), GameObject> pathObjects;
 
-    private void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject); // Ensure the object isn't destroyed when loading new scenes
-        }
-        else
-        {
-            Debug.LogWarning("Another instance of OverworldGenerator detected and destroyed");
-            Destroy(gameObject);
-            return;
-        }
-    }
+    //private void Awake()
+    //{
+        //if (Instance == null)
+        //{
+            //Instance = this;
+            //DontDestroyOnLoad(gameObject); // Ensure the object isn't destroyed when loading new scenes
+        //}
+        //else
+        //{
+            //Debug.LogWarning("Another instance of OverworldGenerator detected and destroyed");
+            //Destroy(gameObject);
+            //return;
+        //}
+    //}
 
     void Start()
     {
-        if (overworldData.biomeGrid != null)
+        overworldData = Resources.Load<OverworldData>("OverWorldData");
+        Debug.Log(overworldData.GetHasData());
+        if (overworldData.GetHasData())
         {
             Debug.Log("Loading existing world state");
             LoadWorldState();
@@ -388,51 +390,42 @@ public class OverworldGenerator : MonoBehaviour
 
     public void SaveWorldState()
     {
-        if (overworldData != null)
+        Vector3 playerPosition = Vector3.zero;
+        PlayerMovement playerMovement = FindObjectOfType<PlayerMovement>();
+
+        if (playerMovement != null)
         {
-            Vector3 playerPosition = Vector3.zero;
-            PlayerMovement playerMovement = FindObjectOfType<PlayerMovement>();
-
-            if (playerMovement != null)
-            {
-                playerPosition = playerMovement.transform.position;
-            }
-            else
-            {
-                Debug.LogError("PlayerMovement object not found!");
-            }
-
-            if (biomeGrid == null)
-            {
-                Debug.LogError("biomeGrid is null!");
-            }
-            if (encounterPositions == null)
-            {
-                Debug.LogError("encounterPositions is null!");
-            }
-            if (encounterConnections == null)
-            {
-                Debug.LogError("encounterConnections is null!");
-            }
-            if (pathObjects == null)
-            {
-                Debug.LogError("pathObjects is null!");
-            }
-
-            overworldData.SetGlobalMapValues(
-                biomeGrid,
-                encounterPositions,
-                encounterConnections,
-                pathObjects,
-                playerPosition
-            );
-
-            Debug.Log("World state saved successfully.");
+            playerPosition = playerMovement.transform.position;
         }
         else
         {
-            Debug.LogError("overworldData is null!");
+            Debug.LogError("PlayerMovement object not found!");
         }
+
+        if (biomeGrid == null)
+        {
+            Debug.LogError("biomeGrid is null!");
+        }
+        if (encounterPositions == null)
+        {
+            Debug.LogError("encounterPositions is null!");
+        }
+        if (encounterConnections == null)
+        {
+            Debug.LogError("encounterConnections is null!");
+        }
+        if (pathObjects == null)
+        {
+            Debug.LogError("pathObjects is null!");
+        }
+
+        overworldData.SetGlobalMapValues(
+            biomeGrid,
+            encounterPositions,
+            encounterConnections,
+            pathObjects,
+            playerPosition
+        );
     }
 
     void LoadWorldState()
